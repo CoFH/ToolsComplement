@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XYX",
+    "X#X",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "tag": "forge:ingots/bronze"
+    },
+    "Y": {
+      "tag": "forge:storage_blocks/bronze"
+    }
+  },
+  "result": {
+    "item": "tools_complement:bronze_hammer"
+  }
+}

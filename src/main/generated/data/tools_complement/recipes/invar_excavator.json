@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " Y ",
+    "X#X",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "tag": "forge:ingots/invar"
+    },
+    "Y": {
+      "tag": "forge:storage_blocks/invar"
+    }
+  },
+  "result": {
+    "item": "tools_complement:invar_excavator"
+  }
+}

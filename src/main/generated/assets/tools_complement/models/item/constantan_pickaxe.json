@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "tools_complement:item/constantan_pickaxe"
+  }
+}

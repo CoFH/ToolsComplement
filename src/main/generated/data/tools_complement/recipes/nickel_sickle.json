@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X ",
+    "  X",
+    "#X "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "tag": "forge:ingots/nickel"
+    }
+  },
+  "result": {
+    "item": "tools_complement:nickel_sickle"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XYX",
+    "X#X",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "tag": "forge:ingots/constantan"
+    },
+    "Y": {
+      "tag": "forge:storage_blocks/constantan"
+    }
+  },
+  "result": {
+    "item": "tools_complement:constantan_hammer"
+  }
+}
