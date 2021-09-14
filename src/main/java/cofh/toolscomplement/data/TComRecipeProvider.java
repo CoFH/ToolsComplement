@@ -1,5 +1,6 @@
 package cofh.toolscomplement.data;
 
+import cofh.core.init.CoreFlags;
 import cofh.lib.data.RecipeProviderCoFH;
 import cofh.lib.util.DeferredRegisterCoFH;
 import cofh.lib.util.references.ItemTagsCoFH;
@@ -21,6 +22,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
     public TComRecipeProvider(DataGenerator generatorIn) {
 
         super(generatorIn, ID_TOOLS_COMPLEMENT);
+        manager = CoreFlags.manager();
     }
 
     @Override
@@ -48,16 +50,26 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
         generateFullToolSet("electrum", "electrum_ingot", ItemTagsCoFH.INGOTS_ELECTRUM, ItemTagsCoFH.STORAGE_BLOCKS_ELECTRUM, consumer);
         generateFullToolSet("invar", "invar_ingot", ItemTagsCoFH.INGOTS_INVAR, ItemTagsCoFH.STORAGE_BLOCKS_INVAR, consumer);
         generateFullToolSet("constantan", "constantan_ingot", ItemTagsCoFH.INGOTS_CONSTANTAN, ItemTagsCoFH.STORAGE_BLOCKS_CONSTANTAN, consumer);
+
+        generateArmorSet("copper", "copper_ingot", ItemTagsCoFH.INGOTS_COPPER, consumer);
+        generateArmorSet("tin", "tin_ingot", ItemTagsCoFH.INGOTS_TIN, consumer);
+        generateArmorSet("lead", "lead_ingot", ItemTagsCoFH.INGOTS_LEAD, consumer);
+        generateArmorSet("silver", "silver_ingot", ItemTagsCoFH.INGOTS_SILVER, consumer);
+        generateArmorSet("nickel", "nickel_ingot", ItemTagsCoFH.INGOTS_NICKEL, consumer);
+        generateArmorSet("bronze", "bronze_ingot", ItemTagsCoFH.INGOTS_BRONZE, consumer);
+        generateArmorSet("electrum", "electrum_ingot", ItemTagsCoFH.INGOTS_ELECTRUM, consumer);
+        generateArmorSet("invar", "invar_ingot", ItemTagsCoFH.INGOTS_INVAR, consumer);
+        generateArmorSet("constantan", "constantan_ingot", ItemTagsCoFH.INGOTS_CONSTANTAN, consumer);
     }
 
     // region HELPERS
     private void generateFullToolSet(String prefix, String itemName, ITag<Item> tag, ITag<Item> storage, Consumer<IFinishedRecipe> consumer) {
 
-        generateStandardToolSet(prefix, itemName, tag, storage, consumer);
+        generateStandardToolSet(prefix, itemName, tag, consumer);
         generateExtraToolSet(prefix, itemName, tag, storage, consumer);
     }
 
-    private void generateStandardToolSet(String prefix, String itemName, ITag<Item> tag, ITag<Item> storage, Consumer<IFinishedRecipe> consumer) {
+    private void generateStandardToolSet(String prefix, String itemName, ITag<Item> tag, Consumer<IFinishedRecipe> consumer) {
 
         DeferredRegisterCoFH<Item> reg = ITEMS;
 
@@ -137,6 +149,37 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .define('X', tag)
                 .pattern("X")
                 .pattern("#")
+                .unlockedBy("has_" + itemName, has(tag)).save(consumer);
+    }
+
+    private void generateArmorSet(String prefix, String itemName, ITag<Item> tag, Consumer<IFinishedRecipe> consumer) {
+
+        DeferredRegisterCoFH<Item> reg = ITEMS;
+
+        ShapedRecipeBuilder.shaped(reg.get(prefix + "_helmet"))
+                .define('X', tag)
+                .pattern("XXX")
+                .pattern("X X")
+                .unlockedBy("has_" + itemName, has(tag)).save(consumer);
+
+        ShapedRecipeBuilder.shaped(reg.get(prefix + "_chestplate"))
+                .define('X', tag)
+                .pattern("X X")
+                .pattern("XXX")
+                .pattern("XXX")
+                .unlockedBy("has_" + itemName, has(tag)).save(consumer);
+
+        ShapedRecipeBuilder.shaped(reg.get(prefix + "_leggings"))
+                .define('X', tag)
+                .pattern("XXX")
+                .pattern("X X")
+                .pattern("X X")
+                .unlockedBy("has_" + itemName, has(tag)).save(consumer);
+
+        ShapedRecipeBuilder.shaped(reg.get(prefix + "_boots"))
+                .define('X', tag)
+                .pattern("X X")
+                .pattern("X X")
                 .unlockedBy("has_" + itemName, has(tag)).save(consumer);
     }
     // endregion

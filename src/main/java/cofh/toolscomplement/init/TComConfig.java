@@ -66,6 +66,33 @@ public class TComConfig {
 
     // region VARIABLES
     public static BooleanValue enableCreativeTab;
+
+    public static BooleanValue enableWoodTools;
+    public static BooleanValue enableStoneTools;
+    public static BooleanValue enableIronTools;
+    public static BooleanValue enableGoldTools;
+    public static BooleanValue enableDiamondTools;
+    public static BooleanValue enableNetheriteTools;
+
+    public static BooleanValue enableCopperTools;
+    public static BooleanValue enableTinTools;
+    public static BooleanValue enableLeadTools;
+    public static BooleanValue enableSilverTools;
+    public static BooleanValue enableNickelTools;
+    public static BooleanValue enableBronzeTools;
+    public static BooleanValue enableElectrumTools;
+    public static BooleanValue enableInvarTools;
+    public static BooleanValue enableConstantanTools;
+
+    public static BooleanValue enableCopperArmor;
+    public static BooleanValue enableTinArmor;
+    public static BooleanValue enableLeadArmor;
+    public static BooleanValue enableSilverArmor;
+    public static BooleanValue enableNickelArmor;
+    public static BooleanValue enableBronzeArmor;
+    public static BooleanValue enableElectrumArmor;
+    public static BooleanValue enableInvarArmor;
+    public static BooleanValue enableConstantanArmor;
     // endregion
 
     // region CONFIGURATION

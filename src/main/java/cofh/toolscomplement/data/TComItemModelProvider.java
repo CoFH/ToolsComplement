@@ -35,11 +35,20 @@ public class TComItemModelProvider extends ItemModelProviderCoFH {
         registerFullToolSet("lead");
         registerFullToolSet("silver");
         registerFullToolSet("nickel");
-
         registerFullToolSet("bronze");
         registerFullToolSet("electrum");
         registerFullToolSet("invar");
         registerFullToolSet("constantan");
+
+        registerArmorSet("copper");
+        registerArmorSet("tin");
+        registerArmorSet("lead");
+        registerArmorSet("silver");
+        registerArmorSet("nickel");
+        registerArmorSet("bronze");
+        registerArmorSet("electrum");
+        registerArmorSet("invar");
+        registerArmorSet("constantan");
     }
 
     // region HELPERS
@@ -70,6 +79,16 @@ public class TComItemModelProvider extends ItemModelProviderCoFH {
         handheld(reg.getSup(prefix + "_sickle"));
 
         handheld(reg.getSup(prefix + "_knife"));
+    }
+
+    private void registerArmorSet(String prefix) {
+
+        DeferredRegisterCoFH<Item> reg = ITEMS;
+
+        generated(reg.getSup(prefix + "_helmet"));
+        generated(reg.getSup(prefix + "_chestplate"));
+        generated(reg.getSup(prefix + "_leggings"));
+        generated(reg.getSup(prefix + "_boots"));
     }
     // endregion
 }
