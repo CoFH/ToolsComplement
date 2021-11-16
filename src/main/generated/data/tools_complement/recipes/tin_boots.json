@@ -11,5 +11,11 @@
   },
   "result": {
     "item": "tools_complement:tin_boots"
-  }
+  },
+  "conditions": [
+    {
+      "tag": "forge:ingots/tin",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
 }

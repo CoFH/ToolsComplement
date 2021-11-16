@@ -11,5 +11,11 @@
   },
   "result": {
     "item": "tools_complement:invar_boots"
-  }
+  },
+  "conditions": [
+    {
+      "tag": "forge:ingots/invar",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
 }

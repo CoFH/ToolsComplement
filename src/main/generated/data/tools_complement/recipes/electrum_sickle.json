@@ -15,5 +15,11 @@
   },
   "result": {
     "item": "tools_complement:electrum_sickle"
-  }
+  },
+  "conditions": [
+    {
+      "tag": "forge:ingots/electrum",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
 }

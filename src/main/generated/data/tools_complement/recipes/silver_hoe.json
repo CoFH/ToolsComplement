@@ -15,5 +15,11 @@
   },
   "result": {
     "item": "tools_complement:silver_hoe"
-  }
+  },
+  "conditions": [
+    {
+      "tag": "forge:ingots/silver",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
 }

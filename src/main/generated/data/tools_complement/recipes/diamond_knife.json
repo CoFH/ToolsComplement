@@ -14,5 +14,11 @@
   },
   "result": {
     "item": "tools_complement:diamond_knife"
-  }
+  },
+  "conditions": [
+    {
+      "tag": "forge:gems/diamond",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
 }

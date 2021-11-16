@@ -15,5 +15,11 @@
   },
   "result": {
     "item": "tools_complement:invar_shovel"
-  }
+  },
+  "conditions": [
+    {
+      "tag": "forge:ingots/invar",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
 }

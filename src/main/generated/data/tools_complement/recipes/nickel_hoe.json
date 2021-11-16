@@ -15,5 +15,11 @@
   },
   "result": {
     "item": "tools_complement:nickel_hoe"
-  }
+  },
+  "conditions": [
+    {
+      "tag": "forge:ingots/nickel",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
 }

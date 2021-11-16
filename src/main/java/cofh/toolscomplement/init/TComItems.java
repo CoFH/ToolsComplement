@@ -101,7 +101,7 @@ public class TComItems {
         ITEMS.register(prefix + "_hammer", () -> new HammerItem(tier, new Item.Properties().tab(toolGroup)).setDisplayGroup(() -> ToolsComplement.itemGroup));
         ITEMS.register(prefix + "_sickle", () -> new SickleItem(tier, new Item.Properties().tab(toolGroup)).setDisplayGroup(() -> ToolsComplement.itemGroup));
 
-        ITEMS.register(prefix + "_knife", () -> new KnifeItem(tier, 1, -1.0F, new Item.Properties().tab(combatGroup)).setDisplayGroup(() -> ToolsComplement.itemGroup));
+        ITEMS.register(prefix + "_knife", () -> new KnifeItem(tier, new Item.Properties().tab(combatGroup)).setDisplayGroup(() -> ToolsComplement.itemGroup));
     }
 
     private static void registerArmorSet(String prefix, IArmorMaterial material, ItemGroup armorGroup) {

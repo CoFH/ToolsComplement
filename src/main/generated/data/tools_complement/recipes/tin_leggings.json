@@ -12,5 +12,11 @@
   },
   "result": {
     "item": "tools_complement:tin_leggings"
-  }
+  },
+  "conditions": [
+    {
+      "tag": "forge:ingots/tin",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
 }

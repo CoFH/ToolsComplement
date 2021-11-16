@@ -15,5 +15,11 @@
   },
   "result": {
     "item": "tools_complement:constantan_axe"
-  }
+  },
+  "conditions": [
+    {
+      "tag": "forge:ingots/constantan",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
 }

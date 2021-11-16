@@ -11,5 +11,11 @@
   },
   "result": {
     "item": "tools_complement:copper_boots"
-  }
+  },
+  "conditions": [
+    {
+      "tag": "forge:ingots/copper",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
 }

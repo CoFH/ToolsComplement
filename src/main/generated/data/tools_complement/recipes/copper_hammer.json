@@ -18,5 +18,11 @@
   },
   "result": {
     "item": "tools_complement:copper_hammer"
-  }
+  },
+  "conditions": [
+    {
+      "tag": "forge:ingots/copper",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
 }

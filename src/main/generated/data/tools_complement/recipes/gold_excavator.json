@@ -18,5 +18,11 @@
   },
   "result": {
     "item": "tools_complement:gold_excavator"
-  }
+  },
+  "conditions": [
+    {
+      "tag": "forge:ingots/gold",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
 }

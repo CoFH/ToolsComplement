@@ -14,5 +14,11 @@
   },
   "result": {
     "item": "tools_complement:netherite_knife"
-  }
+  },
+  "conditions": [
+    {
+      "tag": "forge:ingots/netherite",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
 }

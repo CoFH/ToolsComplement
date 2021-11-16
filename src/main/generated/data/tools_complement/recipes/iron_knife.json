@@ -14,5 +14,11 @@
   },
   "result": {
     "item": "tools_complement:iron_knife"
-  }
+  },
+  "conditions": [
+    {
+      "tag": "forge:ingots/iron",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
 }

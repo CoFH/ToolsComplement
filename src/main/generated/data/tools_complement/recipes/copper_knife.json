@@ -14,5 +14,11 @@
   },
   "result": {
     "item": "tools_complement:copper_knife"
-  }
+  },
+  "conditions": [
+    {
+      "tag": "forge:ingots/copper",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
 }

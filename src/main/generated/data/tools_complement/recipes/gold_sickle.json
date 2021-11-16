@@ -15,5 +15,11 @@
   },
   "result": {
     "item": "tools_complement:gold_sickle"
-  }
+  },
+  "conditions": [
+    {
+      "tag": "forge:ingots/gold",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
 }

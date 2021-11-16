@@ -12,5 +12,11 @@
   },
   "result": {
     "item": "tools_complement:electrum_chestplate"
-  }
+  },
+  "conditions": [
+    {
+      "tag": "forge:ingots/electrum",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
 }

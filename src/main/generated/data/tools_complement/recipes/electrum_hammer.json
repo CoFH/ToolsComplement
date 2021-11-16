@@ -18,5 +18,11 @@
   },
   "result": {
     "item": "tools_complement:electrum_hammer"
-  }
+  },
+  "conditions": [
+    {
+      "tag": "forge:ingots/electrum",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
 }

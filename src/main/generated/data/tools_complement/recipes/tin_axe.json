@@ -15,5 +15,11 @@
   },
   "result": {
     "item": "tools_complement:tin_axe"
-  }
+  },
+  "conditions": [
+    {
+      "tag": "forge:ingots/tin",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
 }

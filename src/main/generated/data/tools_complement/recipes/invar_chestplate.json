@@ -12,5 +12,11 @@
   },
   "result": {
     "item": "tools_complement:invar_chestplate"
-  }
+  },
+  "conditions": [
+    {
+      "tag": "forge:ingots/invar",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
 }

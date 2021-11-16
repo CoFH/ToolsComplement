@@ -63,13 +63,13 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
     }
 
     // region HELPERS
-    private void generateFullToolSet(String prefix, String itemName, ITag<Item> tag, ITag<Item> storage, Consumer<IFinishedRecipe> consumer) {
+    private void generateFullToolSet(String prefix, String itemName, ITag.INamedTag<Item> tag, ITag<Item> storage, Consumer<IFinishedRecipe> consumer) {
 
         generateStandardToolSet(prefix, itemName, tag, consumer);
         generateExtraToolSet(prefix, itemName, tag, storage, consumer);
     }
 
-    private void generateStandardToolSet(String prefix, String itemName, ITag<Item> tag, Consumer<IFinishedRecipe> consumer) {
+    private void generateStandardToolSet(String prefix, String itemName, ITag.INamedTag<Item> tag, Consumer<IFinishedRecipe> consumer) {
 
         DeferredRegisterCoFH<Item> reg = ITEMS;
 
@@ -79,7 +79,8 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern("X")
                 .pattern("#")
                 .pattern("#")
-                .unlockedBy("has_" + itemName, has(tag)).save(consumer);
+                .unlockedBy("has_" + itemName, has(tag))
+                .save(withConditions(consumer).tagExists(tag));
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_pickaxe"))
                 .define('#', Items.STICK)
@@ -87,7 +88,8 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern("XXX")
                 .pattern(" # ")
                 .pattern(" # ")
-                .unlockedBy("has_" + itemName, has(tag)).save(consumer);
+                .unlockedBy("has_" + itemName, has(tag))
+                .save(withConditions(consumer).tagExists(tag));
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_axe"))
                 .define('#', Items.STICK)
@@ -95,7 +97,8 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern("XX")
                 .pattern("X#")
                 .pattern(" #")
-                .unlockedBy("has_" + itemName, has(tag)).save(consumer);
+                .unlockedBy("has_" + itemName, has(tag))
+                .save(withConditions(consumer).tagExists(tag));
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_hoe"))
                 .define('#', Items.STICK)
@@ -103,7 +106,8 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern("XX")
                 .pattern(" #")
                 .pattern(" #")
-                .unlockedBy("has_" + itemName, has(tag)).save(consumer);
+                .unlockedBy("has_" + itemName, has(tag))
+                .save(withConditions(consumer).tagExists(tag));
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_sword"))
                 .define('#', Items.STICK)
@@ -111,10 +115,11 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern("X")
                 .pattern("X")
                 .pattern("#")
-                .unlockedBy("has_" + itemName, has(tag)).save(consumer);
+                .unlockedBy("has_" + itemName, has(tag))
+                .save(withConditions(consumer).tagExists(tag));
     }
 
-    private void generateExtraToolSet(String prefix, String itemName, ITag<Item> tag, ITag<Item> storage, Consumer<IFinishedRecipe> consumer) {
+    private void generateExtraToolSet(String prefix, String itemName, ITag.INamedTag<Item> tag, ITag<Item> storage, Consumer<IFinishedRecipe> consumer) {
 
         DeferredRegisterCoFH<Item> reg = ITEMS;
 
@@ -125,7 +130,8 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern(" Y ")
                 .pattern("X#X")
                 .pattern(" # ")
-                .unlockedBy("has_" + itemName, has(tag)).save(consumer);
+                .unlockedBy("has_" + itemName, has(tag))
+                .save(withConditions(consumer).tagExists(tag));
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_hammer"))
                 .define('#', Items.STICK)
@@ -134,7 +140,8 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern("XYX")
                 .pattern("X#X")
                 .pattern(" # ")
-                .unlockedBy("has_" + itemName, has(tag)).save(consumer);
+                .unlockedBy("has_" + itemName, has(tag))
+                .save(withConditions(consumer).tagExists(tag));
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_sickle"))
                 .define('#', Items.STICK)
@@ -142,17 +149,19 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern(" X ")
                 .pattern("  X")
                 .pattern("#X ")
-                .unlockedBy("has_" + itemName, has(tag)).save(consumer);
+                .unlockedBy("has_" + itemName, has(tag))
+                .save(withConditions(consumer).tagExists(tag));
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_knife"))
                 .define('#', Items.STICK)
                 .define('X', tag)
                 .pattern("X")
                 .pattern("#")
-                .unlockedBy("has_" + itemName, has(tag)).save(consumer);
+                .unlockedBy("has_" + itemName, has(tag))
+                .save(withConditions(consumer).tagExists(tag));
     }
 
-    private void generateArmorSet(String prefix, String itemName, ITag<Item> tag, Consumer<IFinishedRecipe> consumer) {
+    private void generateArmorSet(String prefix, String itemName, ITag.INamedTag<Item> tag, Consumer<IFinishedRecipe> consumer) {
 
         DeferredRegisterCoFH<Item> reg = ITEMS;
 
@@ -160,27 +169,31 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .define('X', tag)
                 .pattern("XXX")
                 .pattern("X X")
-                .unlockedBy("has_" + itemName, has(tag)).save(consumer);
+                .unlockedBy("has_" + itemName, has(tag))
+                .save(withConditions(consumer).tagExists(tag));
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_chestplate"))
                 .define('X', tag)
                 .pattern("X X")
                 .pattern("XXX")
                 .pattern("XXX")
-                .unlockedBy("has_" + itemName, has(tag)).save(consumer);
+                .unlockedBy("has_" + itemName, has(tag))
+                .save(withConditions(consumer).tagExists(tag));
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_leggings"))
                 .define('X', tag)
                 .pattern("XXX")
                 .pattern("X X")
                 .pattern("X X")
-                .unlockedBy("has_" + itemName, has(tag)).save(consumer);
+                .unlockedBy("has_" + itemName, has(tag))
+                .save(withConditions(consumer).tagExists(tag));
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_boots"))
                 .define('X', tag)
                 .pattern("X X")
                 .pattern("X X")
-                .unlockedBy("has_" + itemName, has(tag)).save(consumer);
+                .unlockedBy("has_" + itemName, has(tag))
+                .save(withConditions(consumer).tagExists(tag));
     }
     // endregion
 }

@@ -11,5 +11,11 @@
   },
   "result": {
     "item": "tools_complement:bronze_helmet"
-  }
+  },
+  "conditions": [
+    {
+      "tag": "forge:ingots/bronze",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
 }

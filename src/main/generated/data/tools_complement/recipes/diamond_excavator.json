@@ -18,5 +18,11 @@
   },
   "result": {
     "item": "tools_complement:diamond_excavator"
-  }
+  },
+  "conditions": [
+    {
+      "tag": "forge:gems/diamond",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
 }

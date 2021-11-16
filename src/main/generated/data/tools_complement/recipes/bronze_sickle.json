@@ -15,5 +15,11 @@
   },
   "result": {
     "item": "tools_complement:bronze_sickle"
-  }
+  },
+  "conditions": [
+    {
+      "tag": "forge:ingots/bronze",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
 }

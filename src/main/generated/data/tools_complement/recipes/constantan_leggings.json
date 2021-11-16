@@ -12,5 +12,11 @@
   },
   "result": {
     "item": "tools_complement:constantan_leggings"
-  }
+  },
+  "conditions": [
+    {
+      "tag": "forge:ingots/constantan",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
 }

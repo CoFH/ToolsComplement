@@ -12,5 +12,11 @@
   },
   "result": {
     "item": "tools_complement:lead_chestplate"
-  }
+  },
+  "conditions": [
+    {
+      "tag": "forge:ingots/lead",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
 }

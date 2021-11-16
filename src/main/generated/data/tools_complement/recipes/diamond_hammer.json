@@ -18,5 +18,11 @@
   },
   "result": {
     "item": "tools_complement:diamond_hammer"
-  }
+  },
+  "conditions": [
+    {
+      "tag": "forge:gems/diamond",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
 }

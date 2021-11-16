@@ -18,5 +18,11 @@
   },
   "result": {
     "item": "tools_complement:iron_hammer"
-  }
+  },
+  "conditions": [
+    {
+      "tag": "forge:ingots/iron",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
 }

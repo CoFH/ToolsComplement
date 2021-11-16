@@ -11,5 +11,11 @@
   },
   "result": {
     "item": "tools_complement:lead_boots"
-  }
+  },
+  "conditions": [
+    {
+      "tag": "forge:ingots/lead",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
 }

@@ -15,5 +15,11 @@
   },
   "result": {
     "item": "tools_complement:constantan_sword"
-  }
+  },
+  "conditions": [
+    {
+      "tag": "forge:ingots/constantan",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
 }
