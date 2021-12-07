@@ -17,8 +17,17 @@
   },
   "conditions": [
     {
-      "tag": "forge:gems/diamond",
-      "type": "cofh_core:tag_exists"
+      "values": [
+        {
+          "flag": "diamond_tools",
+          "type": "tools_complement:flag"
+        },
+        {
+          "tag": "forge:gems/diamond",
+          "type": "cofh_core:tag_exists"
+        }
+      ],
+      "type": "forge:and"
     }
   ]
 }

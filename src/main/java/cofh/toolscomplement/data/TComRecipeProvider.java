@@ -1,9 +1,11 @@
 package cofh.toolscomplement.data;
 
-import cofh.core.init.CoreFlags;
 import cofh.lib.data.RecipeProviderCoFH;
 import cofh.lib.util.DeferredRegisterCoFH;
+import cofh.lib.util.flags.FlagRecipeCondition;
+import cofh.lib.util.flags.TagExistsRecipeCondition;
 import cofh.lib.util.references.ItemTagsCoFH;
+import cofh.toolscomplement.init.TComFlags;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.IFinishedRecipe;
 import net.minecraft.data.ShapedRecipeBuilder;
@@ -11,6 +13,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.tags.ITag;
 import net.minecraftforge.common.Tags;
+import net.minecraftforge.common.crafting.conditions.AndCondition;
 
 import java.util.function.Consumer;
 
@@ -22,7 +25,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
     public TComRecipeProvider(DataGenerator generatorIn) {
 
         super(generatorIn, ID_TOOLS_COMPLEMENT);
-        manager = CoreFlags.manager();
+        manager = TComFlags.manager();
     }
 
     @Override
@@ -33,8 +36,6 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
 
     @Override
     protected void buildShapelessRecipes(Consumer<IFinishedRecipe> consumer) {
-
-        DeferredRegisterCoFH<Item> reg = ITEMS;
 
         generateExtraToolSet("iron", "iron_ingot", Tags.Items.INGOTS_IRON, Tags.Items.STORAGE_BLOCKS_IRON, consumer);
         generateExtraToolSet("gold", "gold_ingot", Tags.Items.INGOTS_GOLD, Tags.Items.STORAGE_BLOCKS_GOLD, consumer);
@@ -80,7 +81,12 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern("#")
                 .pattern("#")
                 .unlockedBy("has_" + itemName, has(tag))
-                .save(withConditions(consumer).tagExists(tag));
+                .save(withConditions(consumer)
+                        .addCondition(new AndCondition(
+                                new FlagRecipeCondition(manager, prefix + "_tools"),
+                                new TagExistsRecipeCondition(tag.getName()))
+                        )
+                );
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_pickaxe"))
                 .define('#', Items.STICK)
@@ -89,7 +95,12 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern(" # ")
                 .pattern(" # ")
                 .unlockedBy("has_" + itemName, has(tag))
-                .save(withConditions(consumer).tagExists(tag));
+                .save(withConditions(consumer)
+                        .addCondition(new AndCondition(
+                                new FlagRecipeCondition(manager, prefix + "_tools"),
+                                new TagExistsRecipeCondition(tag.getName()))
+                        )
+                );
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_axe"))
                 .define('#', Items.STICK)
@@ -98,7 +109,12 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern("X#")
                 .pattern(" #")
                 .unlockedBy("has_" + itemName, has(tag))
-                .save(withConditions(consumer).tagExists(tag));
+                .save(withConditions(consumer)
+                        .addCondition(new AndCondition(
+                                new FlagRecipeCondition(manager, prefix + "_tools"),
+                                new TagExistsRecipeCondition(tag.getName()))
+                        )
+                );
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_hoe"))
                 .define('#', Items.STICK)
@@ -107,7 +123,12 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern(" #")
                 .pattern(" #")
                 .unlockedBy("has_" + itemName, has(tag))
-                .save(withConditions(consumer).tagExists(tag));
+                .save(withConditions(consumer)
+                        .addCondition(new AndCondition(
+                                new FlagRecipeCondition(manager, prefix + "_tools"),
+                                new TagExistsRecipeCondition(tag.getName()))
+                        )
+                );
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_sword"))
                 .define('#', Items.STICK)
@@ -116,12 +137,19 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern("X")
                 .pattern("#")
                 .unlockedBy("has_" + itemName, has(tag))
-                .save(withConditions(consumer).tagExists(tag));
+                .save(withConditions(consumer)
+                        .addCondition(new AndCondition(
+                                new FlagRecipeCondition(manager, prefix + "_tools"),
+                                new TagExistsRecipeCondition(tag.getName()))
+                        )
+                );
     }
 
     private void generateExtraToolSet(String prefix, String itemName, ITag.INamedTag<Item> tag, ITag<Item> storage, Consumer<IFinishedRecipe> consumer) {
 
         DeferredRegisterCoFH<Item> reg = ITEMS;
+
+        System.out.println(tag.getName());
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_excavator"))
                 .define('#', Items.STICK)
@@ -131,7 +159,12 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern("X#X")
                 .pattern(" # ")
                 .unlockedBy("has_" + itemName, has(tag))
-                .save(withConditions(consumer).tagExists(tag));
+                .save(withConditions(consumer)
+                        .addCondition(new AndCondition(
+                                new FlagRecipeCondition(manager, prefix + "_tools"),
+                                new TagExistsRecipeCondition(tag.getName()))
+                        )
+                );
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_hammer"))
                 .define('#', Items.STICK)
@@ -141,7 +174,12 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern("X#X")
                 .pattern(" # ")
                 .unlockedBy("has_" + itemName, has(tag))
-                .save(withConditions(consumer).tagExists(tag));
+                .save(withConditions(consumer)
+                        .addCondition(new AndCondition(
+                                new FlagRecipeCondition(manager, prefix + "_tools"),
+                                new TagExistsRecipeCondition(tag.getName()))
+                        )
+                );
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_sickle"))
                 .define('#', Items.STICK)
@@ -150,7 +188,12 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern("  X")
                 .pattern("#X ")
                 .unlockedBy("has_" + itemName, has(tag))
-                .save(withConditions(consumer).tagExists(tag));
+                .save(withConditions(consumer)
+                        .addCondition(new AndCondition(
+                                new FlagRecipeCondition(manager, prefix + "_tools"),
+                                new TagExistsRecipeCondition(tag.getName()))
+                        )
+                );
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_knife"))
                 .define('#', Items.STICK)
@@ -158,7 +201,12 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern("X")
                 .pattern("#")
                 .unlockedBy("has_" + itemName, has(tag))
-                .save(withConditions(consumer).tagExists(tag));
+                .save(withConditions(consumer)
+                        .addCondition(new AndCondition(
+                                new FlagRecipeCondition(manager, prefix + "_tools"),
+                                new TagExistsRecipeCondition(tag.getName()))
+                        )
+                );
     }
 
     private void generateArmorSet(String prefix, String itemName, ITag.INamedTag<Item> tag, Consumer<IFinishedRecipe> consumer) {
@@ -170,7 +218,12 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern("XXX")
                 .pattern("X X")
                 .unlockedBy("has_" + itemName, has(tag))
-                .save(withConditions(consumer).tagExists(tag));
+                .save(withConditions(consumer)
+                        .addCondition(new AndCondition(
+                                new FlagRecipeCondition(manager, prefix + "_armor"),
+                                new TagExistsRecipeCondition(tag.getName()))
+                        )
+                );
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_chestplate"))
                 .define('X', tag)
@@ -178,7 +231,12 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern("XXX")
                 .pattern("XXX")
                 .unlockedBy("has_" + itemName, has(tag))
-                .save(withConditions(consumer).tagExists(tag));
+                .save(withConditions(consumer)
+                        .addCondition(new AndCondition(
+                                new FlagRecipeCondition(manager, prefix + "_armor"),
+                                new TagExistsRecipeCondition(tag.getName()))
+                        )
+                );
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_leggings"))
                 .define('X', tag)
@@ -186,14 +244,24 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern("X X")
                 .pattern("X X")
                 .unlockedBy("has_" + itemName, has(tag))
-                .save(withConditions(consumer).tagExists(tag));
+                .save(withConditions(consumer)
+                        .addCondition(new AndCondition(
+                                new FlagRecipeCondition(manager, prefix + "_armor"),
+                                new TagExistsRecipeCondition(tag.getName()))
+                        )
+                );
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_boots"))
                 .define('X', tag)
                 .pattern("X X")
                 .pattern("X X")
                 .unlockedBy("has_" + itemName, has(tag))
-                .save(withConditions(consumer).tagExists(tag));
+                .save(withConditions(consumer)
+                        .addCondition(new AndCondition(
+                                new FlagRecipeCondition(manager, prefix + "_armor"),
+                                new TagExistsRecipeCondition(tag.getName()))
+                        )
+                );
     }
     // endregion
 }

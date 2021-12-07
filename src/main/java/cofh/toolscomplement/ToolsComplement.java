@@ -26,8 +26,7 @@ public class ToolsComplement {
 
     public static final DeferredRegisterCoFH<Item> ITEMS = DeferredRegisterCoFH.create(ForgeRegistries.ITEMS, ID_TOOLS_COMPLEMENT);
 
-    public static ItemGroup toolGroup;
-    public static ItemGroup combatGroup;
+    public static ItemGroup itemGroup;
 
     public ToolsComplement() {
 
@@ -38,19 +37,20 @@ public class ToolsComplement {
 
         ITEMS.register(modEventBus);
 
+        TComConfig.register();
+
         TComItems.register();
     }
 
     // region INITIALIZATION
     private void commonSetup(final FMLCommonSetupEvent event) {
 
-        TComConfig.register();
     }
 
     private void clientSetup(final FMLClientSetupEvent event) {
 
         if (TComConfig.enableCreativeTab.get()) {
-            toolGroup = new ItemGroup(-1, ID_TOOLS_COMPLEMENT) {
+            itemGroup = new ItemGroup(-1, ID_TOOLS_COMPLEMENT) {
 
                 @Override
                 @OnlyIn(Dist.CLIENT)
@@ -59,10 +59,6 @@ public class ToolsComplement {
                     return new ItemStack(ITEMS.get("diamond_sickle"));
                 }
             };
-            combatGroup = toolGroup;
-        } else {
-            toolGroup = ItemGroup.TAB_TOOLS;
-            combatGroup = ItemGroup.TAB_COMBAT;
         }
     }
     // endregion

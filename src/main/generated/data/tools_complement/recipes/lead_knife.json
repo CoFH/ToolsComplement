@@ -17,8 +17,17 @@
   },
   "conditions": [
     {
-      "tag": "forge:ingots/lead",
-      "type": "cofh_core:tag_exists"
+      "values": [
+        {
+          "flag": "lead_tools",
+          "type": "tools_complement:flag"
+        },
+        {
+          "tag": "forge:ingots/lead",
+          "type": "cofh_core:tag_exists"
+        }
+      ],
+      "type": "forge:and"
     }
   ]
 }

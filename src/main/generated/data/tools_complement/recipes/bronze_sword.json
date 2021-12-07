@@ -18,8 +18,17 @@
   },
   "conditions": [
     {
-      "tag": "forge:ingots/bronze",
-      "type": "cofh_core:tag_exists"
+      "values": [
+        {
+          "flag": "bronze_tools",
+          "type": "tools_complement:flag"
+        },
+        {
+          "tag": "forge:ingots/bronze",
+          "type": "cofh_core:tag_exists"
+        }
+      ],
+      "type": "forge:and"
     }
   ]
 }

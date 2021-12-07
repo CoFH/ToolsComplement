@@ -15,8 +15,17 @@
   },
   "conditions": [
     {
-      "tag": "forge:ingots/electrum",
-      "type": "cofh_core:tag_exists"
+      "values": [
+        {
+          "flag": "electrum_armor",
+          "type": "tools_complement:flag"
+        },
+        {
+          "tag": "forge:ingots/electrum",
+          "type": "cofh_core:tag_exists"
+        }
+      ],
+      "type": "forge:and"
     }
   ]
 }
