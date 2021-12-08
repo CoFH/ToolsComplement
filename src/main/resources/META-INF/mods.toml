@@ -13,7 +13,11 @@ logoFile = "logo.png"
 credits = "Team CoFH"
 authors = "King Lemming"
 description = '''
-Tools!
+Adds Armor and Tool sets in various vanilla and modded materials!
+
+Any given set can be disabled in the config and will only appear if the appropriate material is available.
+
+Suitable for both lightly and heavily modded worlds.
 '''
 [[dependencies.tools_complement]]
 modId = "minecraft"
