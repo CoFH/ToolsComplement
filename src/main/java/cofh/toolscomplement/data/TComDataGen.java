@@ -27,6 +27,11 @@ public class TComDataGen {
         DataGenerator gen = event.getGenerator();
         ExistingFileHelper exFileHelper = event.getExistingFileHelper();
 
+        TComTagsProvider.Block blockTags = new TComTagsProvider.Block(gen, exFileHelper);
+
+        gen.addProvider(blockTags);
+        gen.addProvider(new TComTagsProvider.Item(gen, blockTags, exFileHelper));
+
         gen.addProvider(new TComRecipeProvider(gen));
     }
 

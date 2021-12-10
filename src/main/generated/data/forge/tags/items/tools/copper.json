@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "tools_complement:copper_axe",
+    "tools_complement:copper_hoe",
+    "tools_complement:copper_pickaxe",
+    "tools_complement:copper_shovel",
+    "tools_complement:copper_sword",
+    "tools_complement:copper_excavator",
+    "tools_complement:copper_hammer",
+    "tools_complement:copper_sickle",
+    "tools_complement:copper_knife"
+  ]
+}

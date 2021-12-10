@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "tools_complement:constantan_axe",
+    "tools_complement:constantan_hoe",
+    "tools_complement:constantan_pickaxe",
+    "tools_complement:constantan_shovel",
+    "tools_complement:constantan_sword",
+    "tools_complement:constantan_excavator",
+    "tools_complement:constantan_hammer",
+    "tools_complement:constantan_sickle",
+    "tools_complement:constantan_knife"
+  ]
+}

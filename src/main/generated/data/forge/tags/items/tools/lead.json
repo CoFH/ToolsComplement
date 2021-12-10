@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "tools_complement:lead_axe",
+    "tools_complement:lead_hoe",
+    "tools_complement:lead_pickaxe",
+    "tools_complement:lead_shovel",
+    "tools_complement:lead_sword",
+    "tools_complement:lead_excavator",
+    "tools_complement:lead_hammer",
+    "tools_complement:lead_sickle",
+    "tools_complement:lead_knife"
+  ]
+}

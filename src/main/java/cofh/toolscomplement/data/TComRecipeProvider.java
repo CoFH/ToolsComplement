@@ -149,8 +149,6 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
 
         DeferredRegisterCoFH<Item> reg = ITEMS;
 
-        System.out.println(tag.getName());
-
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_excavator"))
                 .define('#', Items.STICK)
                 .define('X', tag)
