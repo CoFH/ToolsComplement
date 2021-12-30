@@ -8,7 +8,7 @@ import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
 
 import static cofh.lib.util.constants.Constants.ID_TOOLS_COMPLEMENT;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, modid = ID_TOOLS_COMPLEMENT)
+@Mod.EventBusSubscriber (bus = Mod.EventBusSubscriber.Bus.MOD, modid = ID_TOOLS_COMPLEMENT)
 public class TComDataGen {
 
     @SubscribeEvent

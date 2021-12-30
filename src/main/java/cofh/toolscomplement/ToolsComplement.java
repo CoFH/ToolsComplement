@@ -19,7 +19,7 @@ import org.apache.logging.log4j.Logger;
 
 import static cofh.lib.util.constants.Constants.ID_TOOLS_COMPLEMENT;
 
-@Mod(ID_TOOLS_COMPLEMENT)
+@Mod (ID_TOOLS_COMPLEMENT)
 public class ToolsComplement {
 
     public static final Logger LOG = LogManager.getLogger(ID_TOOLS_COMPLEMENT);
@@ -53,7 +53,7 @@ public class ToolsComplement {
             itemGroup = new ItemGroup(-1, ID_TOOLS_COMPLEMENT) {
 
                 @Override
-                @OnlyIn(Dist.CLIENT)
+                @OnlyIn (Dist.CLIENT)
                 public ItemStack makeIcon() {
 
                     return new ItemStack(ITEMS.get("diamond_sickle"));
