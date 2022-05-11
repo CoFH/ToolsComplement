@@ -21,17 +21,8 @@
   },
   "conditions": [
     {
-      "values": [
-        {
-          "flag": "invar_tools",
-          "type": "tools_complement:flag"
-        },
-        {
-          "tag": "forge:ingots/invar",
-          "type": "cofh_core:tag_exists"
-        }
-      ],
-      "type": "forge:and"
+      "flag": "invar_tools",
+      "type": "tools_complement:flag"
     }
   ]
 }

@@ -3,9 +3,9 @@ package cofh.toolscomplement;
 import cofh.lib.util.DeferredRegisterCoFH;
 import cofh.toolscomplement.init.TComConfig;
 import cofh.toolscomplement.init.TComItems;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -26,7 +26,7 @@ public class ToolsComplement {
 
     public static final DeferredRegisterCoFH<Item> ITEMS = DeferredRegisterCoFH.create(ForgeRegistries.ITEMS, ID_TOOLS_COMPLEMENT);
 
-    public static ItemGroup itemGroup;
+    public static CreativeModeTab itemGroup;
 
     public ToolsComplement() {
 
@@ -50,7 +50,7 @@ public class ToolsComplement {
     private void clientSetup(final FMLClientSetupEvent event) {
 
         if (TComConfig.enableCreativeTab.get()) {
-            itemGroup = new ItemGroup(-1, ID_TOOLS_COMPLEMENT) {
+            itemGroup = new CreativeModeTab(-1, ID_TOOLS_COMPLEMENT) {
 
                 @Override
                 @OnlyIn (Dist.CLIENT)

@@ -17,17 +17,8 @@
   },
   "conditions": [
     {
-      "values": [
-        {
-          "flag": "iron_tools",
-          "type": "tools_complement:flag"
-        },
-        {
-          "tag": "forge:ingots/iron",
-          "type": "cofh_core:tag_exists"
-        }
-      ],
-      "type": "forge:and"
+      "flag": "iron_tools",
+      "type": "tools_complement:flag"
     }
   ]
 }

@@ -21,17 +21,8 @@
   },
   "conditions": [
     {
-      "values": [
-        {
-          "flag": "tin_tools",
-          "type": "tools_complement:flag"
-        },
-        {
-          "tag": "forge:ingots/tin",
-          "type": "cofh_core:tag_exists"
-        }
-      ],
-      "type": "forge:and"
+      "flag": "tin_tools",
+      "type": "tools_complement:flag"
     }
   ]
 }

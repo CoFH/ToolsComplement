@@ -18,17 +18,8 @@
   },
   "conditions": [
     {
-      "values": [
-        {
-          "flag": "copper_tools",
-          "type": "tools_complement:flag"
-        },
-        {
-          "tag": "forge:ingots/copper",
-          "type": "cofh_core:tag_exists"
-        }
-      ],
-      "type": "forge:and"
+      "flag": "copper_tools",
+      "type": "tools_complement:flag"
     }
   ]
 }

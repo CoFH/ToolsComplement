@@ -15,17 +15,8 @@
   },
   "conditions": [
     {
-      "values": [
-        {
-          "flag": "nickel_armor",
-          "type": "tools_complement:flag"
-        },
-        {
-          "tag": "forge:ingots/nickel",
-          "type": "cofh_core:tag_exists"
-        }
-      ],
-      "type": "forge:and"
+      "flag": "nickel_armor",
+      "type": "tools_complement:flag"
     }
   ]
 }
