@@ -25,6 +25,16 @@ public class TComItems {
 
     public static void register() {
 
+        armorMaterialCopper = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":copper", 7, new int[]{1, 3, 4, 1}, 11, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(Tags.Items.INGOTS_COPPER));
+        armorMaterialTin = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":tin", 8, new int[]{1, 3, 4, 1}, 20, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(CoFHTags.Items.INGOTS_TIN));
+        armorMaterialLead = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":lead", 12, new int[]{2, 4, 5, 2}, 18, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(CoFHTags.Items.INGOTS_LEAD));
+        armorMaterialSilver = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":silver", 6, new int[]{1, 3, 5, 2}, 32, SoundEvents.ARMOR_EQUIP_GOLD, 0.0F, 0.0F, () -> Ingredient.of(CoFHTags.Items.INGOTS_SILVER));
+        armorMaterialNickel = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":nickel", 14, new int[]{2, 5, 5, 2}, 14, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(CoFHTags.Items.INGOTS_NICKEL));
+        armorMaterialBronze = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":bronze", 16, new int[]{2, 5, 6, 2}, 18, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(CoFHTags.Items.INGOTS_BRONZE));
+        armorMaterialElectrum = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":electrum", 7, new int[]{1, 3, 5, 2}, 30, SoundEvents.ARMOR_EQUIP_GOLD, 0.0F, 0.0F, () -> Ingredient.of(CoFHTags.Items.INGOTS_ELECTRUM));
+        armorMaterialInvar = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":invar", 15, new int[]{2, 5, 7, 2}, 15, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(CoFHTags.Items.INGOTS_INVAR));
+        armorMaterialConstantan = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":constantan", 8, new int[]{1, 4, 4, 2}, 12, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(CoFHTags.Items.INGOTS_CONSTANTAN));
+
         CreativeModeTab combat = CreativeModeTab.TAB_COMBAT;
         CreativeModeTab tools = CreativeModeTab.TAB_TOOLS;
 
@@ -43,15 +53,15 @@ public class TComItems {
         registerFullToolSet("invar", TOOL_MATERIAL_INVAR, tools, combat);
         registerFullToolSet("constantan", TOOL_MATERIAL_CONSTANTAN, tools, combat);
 
-        registerArmorSet("copper", ARMOR_MATERIAL_COPPER, combat);
-        registerArmorSet("tin", ARMOR_MATERIAL_TIN, combat);
-        registerArmorSet("lead", ARMOR_MATERIAL_LEAD, combat);
-        registerArmorSet("silver", ARMOR_MATERIAL_SILVER, combat);
-        registerArmorSet("nickel", ARMOR_MATERIAL_NICKEL, combat);
-        registerArmorSet("bronze", ARMOR_MATERIAL_BRONZE, combat);
-        registerArmorSet("electrum", ARMOR_MATERIAL_ELECTRUM, combat);
-        registerArmorSet("invar", ARMOR_MATERIAL_INVAR, combat);
-        registerArmorSet("constantan", ARMOR_MATERIAL_CONSTANTAN, combat);
+        registerArmorSet("copper", armorMaterialCopper, combat);
+        registerArmorSet("tin", armorMaterialTin, combat);
+        registerArmorSet("lead", armorMaterialLead, combat);
+        registerArmorSet("silver", armorMaterialSilver, combat);
+        registerArmorSet("nickel", armorMaterialNickel, combat);
+        registerArmorSet("bronze", armorMaterialBronze, combat);
+        registerArmorSet("electrum", armorMaterialElectrum, combat);
+        registerArmorSet("invar", armorMaterialInvar, combat);
+        registerArmorSet("constantan", armorMaterialConstantan, combat);
     }
 
     // region TOOL MATERIALS
@@ -68,16 +78,15 @@ public class TComItems {
     // endregion
 
     // region ARMOR MATERIALS
-    public static final ArmorMaterialCoFH ARMOR_MATERIAL_COPPER = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":copper", 7, new int[]{1, 3, 4, 1}, 11, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(Tags.Items.INGOTS_COPPER));
-    public static final ArmorMaterialCoFH ARMOR_MATERIAL_TIN = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":tin", 8, new int[]{1, 3, 4, 1}, 20, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(CoFHTags.Items.INGOTS_TIN));
-    public static final ArmorMaterialCoFH ARMOR_MATERIAL_LEAD = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":lead", 12, new int[]{2, 4, 5, 2}, 18, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(CoFHTags.Items.INGOTS_LEAD));
-    public static final ArmorMaterialCoFH ARMOR_MATERIAL_SILVER = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":silver", 6, new int[]{1, 3, 5, 2}, 32, SoundEvents.ARMOR_EQUIP_GOLD, 0.0F, 0.0F, () -> Ingredient.of(CoFHTags.Items.INGOTS_SILVER));
-    public static final ArmorMaterialCoFH ARMOR_MATERIAL_NICKEL = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":nickel", 14, new int[]{2, 5, 5, 2}, 14, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(CoFHTags.Items.INGOTS_NICKEL));
-
-    public static final ArmorMaterialCoFH ARMOR_MATERIAL_BRONZE = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":bronze", 16, new int[]{2, 5, 6, 2}, 18, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(CoFHTags.Items.INGOTS_BRONZE));
-    public static final ArmorMaterialCoFH ARMOR_MATERIAL_ELECTRUM = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":electrum", 7, new int[]{1, 3, 5, 2}, 30, SoundEvents.ARMOR_EQUIP_GOLD, 0.0F, 0.0F, () -> Ingredient.of(CoFHTags.Items.INGOTS_ELECTRUM));
-    public static final ArmorMaterialCoFH ARMOR_MATERIAL_INVAR = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":invar", 15, new int[]{2, 5, 7, 2}, 15, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(CoFHTags.Items.INGOTS_INVAR));
-    public static final ArmorMaterialCoFH ARMOR_MATERIAL_CONSTANTAN = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":constantan", 8, new int[]{1, 4, 4, 2}, 12, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(CoFHTags.Items.INGOTS_CONSTANTAN));
+    public static ArmorMaterialCoFH armorMaterialCopper;
+    public static ArmorMaterialCoFH armorMaterialTin;
+    public static ArmorMaterialCoFH armorMaterialLead;
+    public static ArmorMaterialCoFH armorMaterialSilver;
+    public static ArmorMaterialCoFH armorMaterialNickel;
+    public static ArmorMaterialCoFH armorMaterialBronze;
+    public static ArmorMaterialCoFH armorMaterialElectrum;
+    public static ArmorMaterialCoFH armorMaterialInvar;
+    public static ArmorMaterialCoFH armorMaterialConstantan;
     // endregion
 
     // region HELPERS

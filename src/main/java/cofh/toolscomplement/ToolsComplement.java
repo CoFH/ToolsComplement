@@ -23,6 +23,7 @@ import static cofh.lib.util.constants.Constants.ID_TOOLS_COMPLEMENT;
 public class ToolsComplement {
 
     public static final Logger LOG = LogManager.getLogger(ID_TOOLS_COMPLEMENT);
+    // public static final ConfigManager CONFIG_MANAGER = new ConfigManager();
 
     public static final DeferredRegisterCoFH<Item> ITEMS = DeferredRegisterCoFH.create(ForgeRegistries.ITEMS, ID_TOOLS_COMPLEMENT);
 
@@ -34,6 +35,10 @@ public class ToolsComplement {
 
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::clientSetup);
+
+        //        CONFIG_MANAGER.register(modEventBus)
+        //                .addServerConfig(new ArmorConfigGroup())
+        //                .addServerConfig(new ToolConfigGroup());
 
         ITEMS.register(modEventBus);
 

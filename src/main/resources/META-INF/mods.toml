@@ -22,20 +22,20 @@ Suitable for both lightly and heavily modded worlds.
 [[dependencies.tools_complement]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.16.5,)"
+versionRange = "[1.18.2,)"
 ordering = "AFTER"
 side = "BOTH"
 
 [[dependencies.tools_complement]]
 modId = "forge"
 mandatory = true
-versionRange = "[36.2.20,)"
+versionRange = "[40.1.0,)"
 ordering = "AFTER"
 side = "BOTH"
 
 [[dependencies.tools_complement]]
 modId = "cofh_core"
 mandatory = true
-versionRange = "[1.4.1,1.5]"
+versionRange = "[1.6,1.7]"
 ordering = "AFTER"
 side = "BOTH"
