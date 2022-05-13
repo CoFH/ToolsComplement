@@ -54,17 +54,19 @@ public class ToolsComplement {
 
     private void clientSetup(final FMLClientSetupEvent event) {
 
-        if (TComConfig.enableCreativeTab.get()) {
-            itemGroup = new CreativeModeTab(-1, ID_TOOLS_COMPLEMENT) {
+        event.enqueueWork(() -> {
+            if (TComConfig.enableCreativeTab.get()) {
+                itemGroup = new CreativeModeTab(-1, ID_TOOLS_COMPLEMENT) {
 
-                @Override
-                @OnlyIn (Dist.CLIENT)
-                public ItemStack makeIcon() {
+                    @Override
+                    @OnlyIn (Dist.CLIENT)
+                    public ItemStack makeIcon() {
 
-                    return new ItemStack(ITEMS.get("diamond_sickle"));
-                }
-            };
-        }
+                        return new ItemStack(ITEMS.get("diamond_sickle"));
+                    }
+                };
+            }
+        });
     }
     // endregion
 }
