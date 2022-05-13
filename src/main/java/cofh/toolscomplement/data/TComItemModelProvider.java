@@ -1,9 +1,7 @@
 package cofh.toolscomplement.data;
 
 import cofh.lib.data.ItemModelProviderCoFH;
-import cofh.lib.util.DeferredRegisterCoFH;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.world.item.Item;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
 import static cofh.lib.util.constants.Constants.ID_TOOLS_COMPLEMENT;
@@ -60,7 +58,7 @@ public class TComItemModelProvider extends ItemModelProviderCoFH {
 
     private void registerStandardToolSet(String prefix) {
 
-        DeferredRegisterCoFH<Item> reg = ITEMS;
+        var reg = ITEMS;
 
         handheld(reg.getSup(prefix + "_shovel"));
         handheld(reg.getSup(prefix + "_pickaxe"));
@@ -72,7 +70,7 @@ public class TComItemModelProvider extends ItemModelProviderCoFH {
 
     private void registerExtraToolSet(String prefix) {
 
-        DeferredRegisterCoFH<Item> reg = ITEMS;
+        var reg = ITEMS;
 
         handheld(reg.getSup(prefix + "_excavator"));
         handheld(reg.getSup(prefix + "_hammer"));
@@ -83,7 +81,7 @@ public class TComItemModelProvider extends ItemModelProviderCoFH {
 
     private void registerArmorSet(String prefix) {
 
-        DeferredRegisterCoFH<Item> reg = ITEMS;
+        var reg = ITEMS;
 
         generated(reg.getSup(prefix + "_helmet"));
         generated(reg.getSup(prefix + "_chestplate"));

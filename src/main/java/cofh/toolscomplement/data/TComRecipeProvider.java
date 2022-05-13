@@ -1,7 +1,6 @@
 package cofh.toolscomplement.data;
 
 import cofh.lib.data.RecipeProviderCoFH;
-import cofh.lib.util.DeferredRegisterCoFH;
 import cofh.lib.util.flags.FlagRecipeCondition;
 import cofh.lib.util.references.CoFHTags;
 import cofh.toolscomplement.init.TComFlags;
@@ -70,7 +69,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
 
     private void generateStandardToolSet(String prefix, String itemName, TagKey<Item> tag, Consumer<FinishedRecipe> consumer) {
 
-        DeferredRegisterCoFH<Item> reg = ITEMS;
+        var reg = ITEMS;
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_shovel"))
                 .define('#', Items.STICK)
@@ -130,7 +129,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
 
     private void generateExtraToolSet(String prefix, String itemName, TagKey<Item> tag, TagKey<Item> storage, Consumer<FinishedRecipe> consumer) {
 
-        DeferredRegisterCoFH<Item> reg = ITEMS;
+        var reg = ITEMS;
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_excavator"))
                 .define('#', Items.STICK)
@@ -180,7 +179,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
 
     private void generateArmorSet(String prefix, String itemName, TagKey<Item> tag, Consumer<FinishedRecipe> consumer) {
 
-        DeferredRegisterCoFH<Item> reg = ITEMS;
+        var reg = ITEMS;
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_helmet"))
                 .define('X', tag)
