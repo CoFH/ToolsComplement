@@ -19,6 +19,10 @@
     {
       "flag": "electrum_tools",
       "type": "tools_complement:flag"
+    },
+    {
+      "tag": "forge:ingots/electrum",
+      "type": "cofh_core:tag_exists"
     }
   ]
 }

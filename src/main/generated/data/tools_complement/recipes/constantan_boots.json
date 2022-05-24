@@ -16,6 +16,10 @@
     {
       "flag": "constantan_armor",
       "type": "tools_complement:flag"
+    },
+    {
+      "tag": "forge:ingots/constantan",
+      "type": "cofh_core:tag_exists"
     }
   ]
 }

@@ -2,6 +2,7 @@ package cofh.toolscomplement.data;
 
 import cofh.lib.data.RecipeProviderCoFH;
 import cofh.lib.util.flags.FlagRecipeCondition;
+import cofh.lib.util.flags.TagExistsRecipeCondition;
 import cofh.lib.util.references.CoFHTags;
 import cofh.toolscomplement.init.TComFlags;
 import net.minecraft.data.DataGenerator;
@@ -80,6 +81,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .unlockedBy("has_" + itemName, has(tag))
                 .save(withConditions(consumer)
                         .addCondition(new FlagRecipeCondition(manager, prefix + "_tools"))
+                        .addCondition(new TagExistsRecipeCondition(tag.location()))
                 );
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_pickaxe"))
@@ -91,6 +93,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .unlockedBy("has_" + itemName, has(tag))
                 .save(withConditions(consumer)
                         .addCondition(new FlagRecipeCondition(manager, prefix + "_tools"))
+                        .addCondition(new TagExistsRecipeCondition(tag.location()))
                 );
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_axe"))
@@ -102,6 +105,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .unlockedBy("has_" + itemName, has(tag))
                 .save(withConditions(consumer)
                         .addCondition(new FlagRecipeCondition(manager, prefix + "_tools"))
+                        .addCondition(new TagExistsRecipeCondition(tag.location()))
                 );
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_hoe"))
@@ -113,6 +117,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .unlockedBy("has_" + itemName, has(tag))
                 .save(withConditions(consumer)
                         .addCondition(new FlagRecipeCondition(manager, prefix + "_tools"))
+                        .addCondition(new TagExistsRecipeCondition(tag.location()))
                 );
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_sword"))
@@ -124,6 +129,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .unlockedBy("has_" + itemName, has(tag))
                 .save(withConditions(consumer)
                         .addCondition(new FlagRecipeCondition(manager, prefix + "_tools"))
+                        .addCondition(new TagExistsRecipeCondition(tag.location()))
                 );
     }
 
@@ -141,6 +147,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .unlockedBy("has_" + itemName, has(tag))
                 .save(withConditions(consumer)
                         .addCondition(new FlagRecipeCondition(manager, prefix + "_tools"))
+                        .addCondition(new TagExistsRecipeCondition(tag.location()))
                 );
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_hammer"))
@@ -153,6 +160,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .unlockedBy("has_" + itemName, has(tag))
                 .save(withConditions(consumer)
                         .addCondition(new FlagRecipeCondition(manager, prefix + "_tools"))
+                        .addCondition(new TagExistsRecipeCondition(tag.location()))
                 );
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_sickle"))
@@ -164,6 +172,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .unlockedBy("has_" + itemName, has(tag))
                 .save(withConditions(consumer)
                         .addCondition(new FlagRecipeCondition(manager, prefix + "_tools"))
+                        .addCondition(new TagExistsRecipeCondition(tag.location()))
                 );
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_knife"))
@@ -174,6 +183,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .unlockedBy("has_" + itemName, has(tag))
                 .save(withConditions(consumer)
                         .addCondition(new FlagRecipeCondition(manager, prefix + "_tools"))
+                        .addCondition(new TagExistsRecipeCondition(tag.location()))
                 );
     }
 
@@ -188,6 +198,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .unlockedBy("has_" + itemName, has(tag))
                 .save(withConditions(consumer)
                         .addCondition(new FlagRecipeCondition(manager, prefix + "_armor"))
+                        .addCondition(new TagExistsRecipeCondition(tag.location()))
                 );
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_chestplate"))
@@ -198,6 +209,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .unlockedBy("has_" + itemName, has(tag))
                 .save(withConditions(consumer)
                         .addCondition(new FlagRecipeCondition(manager, prefix + "_armor"))
+                        .addCondition(new TagExistsRecipeCondition(tag.location()))
                 );
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_leggings"))
@@ -208,6 +220,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .unlockedBy("has_" + itemName, has(tag))
                 .save(withConditions(consumer)
                         .addCondition(new FlagRecipeCondition(manager, prefix + "_armor"))
+                        .addCondition(new TagExistsRecipeCondition(tag.location()))
                 );
 
         ShapedRecipeBuilder.shaped(reg.get(prefix + "_boots"))
@@ -217,6 +230,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .unlockedBy("has_" + itemName, has(tag))
                 .save(withConditions(consumer)
                         .addCondition(new FlagRecipeCondition(manager, prefix + "_armor"))
+                        .addCondition(new TagExistsRecipeCondition(tag.location()))
                 );
     }
     // endregion

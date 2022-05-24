@@ -20,6 +20,10 @@
     {
       "flag": "silver_tools",
       "type": "tools_complement:flag"
+    },
+    {
+      "tag": "forge:ingots/silver",
+      "type": "cofh_core:tag_exists"
     }
   ]
 }

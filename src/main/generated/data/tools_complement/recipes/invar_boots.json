@@ -16,6 +16,10 @@
     {
       "flag": "invar_armor",
       "type": "tools_complement:flag"
+    },
+    {
+      "tag": "forge:ingots/invar",
+      "type": "cofh_core:tag_exists"
     }
   ]
 }

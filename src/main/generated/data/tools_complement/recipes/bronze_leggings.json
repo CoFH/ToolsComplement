@@ -17,6 +17,10 @@
     {
       "flag": "bronze_armor",
       "type": "tools_complement:flag"
+    },
+    {
+      "tag": "forge:ingots/bronze",
+      "type": "cofh_core:tag_exists"
     }
   ]
 }
