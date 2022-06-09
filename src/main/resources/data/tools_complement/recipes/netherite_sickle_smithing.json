@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "tools_complement:diamond_sickle"
+  },
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "result": {
+    "item": "tools_complement:netherite_sickle"
+  },
+  "conditions": [
+    {
+      "flag": "netherite_tools",
+      "type": "tools_complement:flag"
+    },
+    {
+      "tag": "forge:ingots/netherite",
+      "type": "cofh_core:tag_exists"
+    }
+  ]
+}
