@@ -38,7 +38,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
         generateExtraToolSet("iron", "iron_ingot", Tags.Items.INGOTS_IRON, Tags.Items.STORAGE_BLOCKS_IRON, consumer);
         generateExtraToolSet("gold", "gold_ingot", Tags.Items.INGOTS_GOLD, Tags.Items.STORAGE_BLOCKS_GOLD, consumer);
         generateExtraToolSet("diamond", "diamond", Tags.Items.GEMS_DIAMOND, Tags.Items.STORAGE_BLOCKS_DIAMOND, consumer);
-        generateExtraToolSet("netherite", "netherite_ingot", Tags.Items.INGOTS_NETHERITE, Tags.Items.STORAGE_BLOCKS_NETHERITE, consumer);
+        // generateExtraToolSet("netherite", "netherite_ingot", Tags.Items.INGOTS_NETHERITE, Tags.Items.STORAGE_BLOCKS_NETHERITE, consumer);
 
         generateFullToolSet("copper", "copper_ingot", Tags.Items.INGOTS_COPPER, Tags.Items.STORAGE_BLOCKS_COPPER, consumer);
         generateFullToolSet("tin", "tin_ingot", CoFHTags.Items.INGOTS_TIN, CoFHTags.Items.STORAGE_BLOCKS_TIN, consumer);
