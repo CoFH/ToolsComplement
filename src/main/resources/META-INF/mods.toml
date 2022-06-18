@@ -10,6 +10,7 @@ displayName = "Tool's Complement"
 updateJSONURL = "https://raw.github.com/cofh/version/master/tools_complement/update.json"
 displayURL = "https://teamcofh.com/"
 logoFile = "logo.png"
+itemIcon = "tools_complement:diamond_sickle"
 credits = "Team CoFH"
 authors = "King Lemming"
 description = '''
