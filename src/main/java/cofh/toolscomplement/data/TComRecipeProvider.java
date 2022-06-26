@@ -1,9 +1,9 @@
 package cofh.toolscomplement.data;
 
 import cofh.lib.data.RecipeProviderCoFH;
+import cofh.lib.tags.ItemTagsCoFH;
 import cofh.lib.util.flags.FlagRecipeCondition;
 import cofh.lib.util.flags.TagExistsRecipeCondition;
-import cofh.lib.util.references.CoFHTags;
 import cofh.toolscomplement.init.TComFlags;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.FinishedRecipe;
@@ -15,7 +15,7 @@ import net.minecraftforge.common.Tags;
 
 import java.util.function.Consumer;
 
-import static cofh.lib.util.constants.Constants.ID_TOOLS_COMPLEMENT;
+import static cofh.lib.util.constants.ModIds.ID_TOOLS_COMPLEMENT;
 import static cofh.toolscomplement.ToolsComplement.ITEMS;
 
 public class TComRecipeProvider extends RecipeProviderCoFH {
@@ -41,24 +41,24 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
         // generateExtraToolSet("netherite", "netherite_ingot", Tags.Items.INGOTS_NETHERITE, Tags.Items.STORAGE_BLOCKS_NETHERITE, consumer);
 
         generateFullToolSet("copper", "copper_ingot", Tags.Items.INGOTS_COPPER, Tags.Items.STORAGE_BLOCKS_COPPER, consumer);
-        generateFullToolSet("tin", "tin_ingot", CoFHTags.Items.INGOTS_TIN, CoFHTags.Items.STORAGE_BLOCKS_TIN, consumer);
-        generateFullToolSet("lead", "lead_ingot", CoFHTags.Items.INGOTS_LEAD, CoFHTags.Items.STORAGE_BLOCKS_LEAD, consumer);
-        generateFullToolSet("silver", "silver_ingot", CoFHTags.Items.INGOTS_SILVER, CoFHTags.Items.STORAGE_BLOCKS_SILVER, consumer);
-        generateFullToolSet("nickel", "nickel_ingot", CoFHTags.Items.INGOTS_NICKEL, CoFHTags.Items.STORAGE_BLOCKS_NICKEL, consumer);
-        generateFullToolSet("bronze", "bronze_ingot", CoFHTags.Items.INGOTS_BRONZE, CoFHTags.Items.STORAGE_BLOCKS_BRONZE, consumer);
-        generateFullToolSet("electrum", "electrum_ingot", CoFHTags.Items.INGOTS_ELECTRUM, CoFHTags.Items.STORAGE_BLOCKS_ELECTRUM, consumer);
-        generateFullToolSet("invar", "invar_ingot", CoFHTags.Items.INGOTS_INVAR, CoFHTags.Items.STORAGE_BLOCKS_INVAR, consumer);
-        generateFullToolSet("constantan", "constantan_ingot", CoFHTags.Items.INGOTS_CONSTANTAN, CoFHTags.Items.STORAGE_BLOCKS_CONSTANTAN, consumer);
+        generateFullToolSet("tin", "tin_ingot", ItemTagsCoFH.INGOTS_TIN, ItemTagsCoFH.STORAGE_BLOCKS_TIN, consumer);
+        generateFullToolSet("lead", "lead_ingot", ItemTagsCoFH.INGOTS_LEAD, ItemTagsCoFH.STORAGE_BLOCKS_LEAD, consumer);
+        generateFullToolSet("silver", "silver_ingot", ItemTagsCoFH.INGOTS_SILVER, ItemTagsCoFH.STORAGE_BLOCKS_SILVER, consumer);
+        generateFullToolSet("nickel", "nickel_ingot", ItemTagsCoFH.INGOTS_NICKEL, ItemTagsCoFH.STORAGE_BLOCKS_NICKEL, consumer);
+        generateFullToolSet("bronze", "bronze_ingot", ItemTagsCoFH.INGOTS_BRONZE, ItemTagsCoFH.STORAGE_BLOCKS_BRONZE, consumer);
+        generateFullToolSet("electrum", "electrum_ingot", ItemTagsCoFH.INGOTS_ELECTRUM, ItemTagsCoFH.STORAGE_BLOCKS_ELECTRUM, consumer);
+        generateFullToolSet("invar", "invar_ingot", ItemTagsCoFH.INGOTS_INVAR, ItemTagsCoFH.STORAGE_BLOCKS_INVAR, consumer);
+        generateFullToolSet("constantan", "constantan_ingot", ItemTagsCoFH.INGOTS_CONSTANTAN, ItemTagsCoFH.STORAGE_BLOCKS_CONSTANTAN, consumer);
 
         generateArmorSet("copper", "copper_ingot", Tags.Items.INGOTS_COPPER, consumer);
-        generateArmorSet("tin", "tin_ingot", CoFHTags.Items.INGOTS_TIN, consumer);
-        generateArmorSet("lead", "lead_ingot", CoFHTags.Items.INGOTS_LEAD, consumer);
-        generateArmorSet("silver", "silver_ingot", CoFHTags.Items.INGOTS_SILVER, consumer);
-        generateArmorSet("nickel", "nickel_ingot", CoFHTags.Items.INGOTS_NICKEL, consumer);
-        generateArmorSet("bronze", "bronze_ingot", CoFHTags.Items.INGOTS_BRONZE, consumer);
-        generateArmorSet("electrum", "electrum_ingot", CoFHTags.Items.INGOTS_ELECTRUM, consumer);
-        generateArmorSet("invar", "invar_ingot", CoFHTags.Items.INGOTS_INVAR, consumer);
-        generateArmorSet("constantan", "constantan_ingot", CoFHTags.Items.INGOTS_CONSTANTAN, consumer);
+        generateArmorSet("tin", "tin_ingot", ItemTagsCoFH.INGOTS_TIN, consumer);
+        generateArmorSet("lead", "lead_ingot", ItemTagsCoFH.INGOTS_LEAD, consumer);
+        generateArmorSet("silver", "silver_ingot", ItemTagsCoFH.INGOTS_SILVER, consumer);
+        generateArmorSet("nickel", "nickel_ingot", ItemTagsCoFH.INGOTS_NICKEL, consumer);
+        generateArmorSet("bronze", "bronze_ingot", ItemTagsCoFH.INGOTS_BRONZE, consumer);
+        generateArmorSet("electrum", "electrum_ingot", ItemTagsCoFH.INGOTS_ELECTRUM, consumer);
+        generateArmorSet("invar", "invar_ingot", ItemTagsCoFH.INGOTS_INVAR, consumer);
+        generateArmorSet("constantan", "constantan_ingot", ItemTagsCoFH.INGOTS_CONSTANTAN, consumer);
     }
 
     // region HELPERS

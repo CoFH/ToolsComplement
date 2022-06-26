@@ -1,7 +1,9 @@
 package cofh.toolscomplement.config;
 
-import cofh.lib.config.IBaseConfig;
+import cofh.core.config.IBaseConfig;
 import net.minecraftforge.common.ForgeConfigSpec;
+
+import java.util.function.Supplier;
 
 public class ArmorConfig implements IBaseConfig {
 
@@ -12,9 +14,9 @@ public class ArmorConfig implements IBaseConfig {
     protected float toughness;
     protected float knockbackResist;
 
-    private ForgeConfigSpec.IntValue configDurabilityFactor;
-    private ForgeConfigSpec.IntValue[] configDefenseAmounts = new ForgeConfigSpec.IntValue[4];
-    private ForgeConfigSpec.IntValue configEnchantability;
+    private Supplier<Integer> configDurabilityFactor;
+    private Supplier<Integer>[] configDefenseAmounts = new Supplier[4];
+    private Supplier<Integer> configEnchantability;
     private ForgeConfigSpec.DoubleValue configToughness;
     private ForgeConfigSpec.DoubleValue configKnockbackResist;
 

@@ -1,11 +1,9 @@
 package cofh.toolscomplement.init;
 
-import cofh.core.item.ArmorItemCoFH;
-import cofh.lib.item.ArmorMaterialCoFH;
-import cofh.lib.item.ItemTierCoFH;
-import cofh.lib.item.impl.*;
+import cofh.core.item.*;
+import cofh.lib.item.*;
+import cofh.lib.tags.ItemTagsCoFH;
 import cofh.lib.util.helpers.MathHelper;
-import cofh.lib.util.references.CoFHTags;
 import cofh.toolscomplement.ToolsComplement;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -13,7 +11,7 @@ import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.Tags;
 
-import static cofh.lib.util.constants.Constants.ID_TOOLS_COMPLEMENT;
+import static cofh.lib.util.constants.ModIds.ID_TOOLS_COMPLEMENT;
 import static cofh.toolscomplement.ToolsComplement.ITEMS;
 import static cofh.toolscomplement.init.TComFlags.getFlag;
 
@@ -26,14 +24,14 @@ public class TComItems {
     public static void register() {
 
         armorMaterialCopper = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":copper", 7, new int[]{1, 3, 4, 1}, 11, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(Tags.Items.INGOTS_COPPER));
-        armorMaterialTin = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":tin", 8, new int[]{1, 3, 4, 1}, 20, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(CoFHTags.Items.INGOTS_TIN));
-        armorMaterialLead = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":lead", 12, new int[]{2, 4, 5, 2}, 18, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(CoFHTags.Items.INGOTS_LEAD));
-        armorMaterialSilver = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":silver", 6, new int[]{1, 3, 5, 2}, 32, SoundEvents.ARMOR_EQUIP_GOLD, 0.0F, 0.0F, () -> Ingredient.of(CoFHTags.Items.INGOTS_SILVER));
-        armorMaterialNickel = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":nickel", 14, new int[]{2, 5, 5, 2}, 14, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(CoFHTags.Items.INGOTS_NICKEL));
-        armorMaterialBronze = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":bronze", 16, new int[]{2, 5, 6, 2}, 18, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(CoFHTags.Items.INGOTS_BRONZE));
-        armorMaterialElectrum = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":electrum", 7, new int[]{1, 3, 5, 2}, 30, SoundEvents.ARMOR_EQUIP_GOLD, 0.0F, 0.0F, () -> Ingredient.of(CoFHTags.Items.INGOTS_ELECTRUM));
-        armorMaterialInvar = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":invar", 15, new int[]{2, 5, 7, 2}, 15, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(CoFHTags.Items.INGOTS_INVAR));
-        armorMaterialConstantan = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":constantan", 8, new int[]{1, 4, 4, 2}, 12, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(CoFHTags.Items.INGOTS_CONSTANTAN));
+        armorMaterialTin = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":tin", 8, new int[]{1, 3, 4, 1}, 20, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(ItemTagsCoFH.INGOTS_TIN));
+        armorMaterialLead = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":lead", 12, new int[]{2, 4, 5, 2}, 18, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(ItemTagsCoFH.INGOTS_LEAD));
+        armorMaterialSilver = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":silver", 6, new int[]{1, 3, 5, 2}, 32, SoundEvents.ARMOR_EQUIP_GOLD, 0.0F, 0.0F, () -> Ingredient.of(ItemTagsCoFH.INGOTS_SILVER));
+        armorMaterialNickel = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":nickel", 14, new int[]{2, 5, 5, 2}, 14, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(ItemTagsCoFH.INGOTS_NICKEL));
+        armorMaterialBronze = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":bronze", 16, new int[]{2, 5, 6, 2}, 18, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(ItemTagsCoFH.INGOTS_BRONZE));
+        armorMaterialElectrum = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":electrum", 7, new int[]{1, 3, 5, 2}, 30, SoundEvents.ARMOR_EQUIP_GOLD, 0.0F, 0.0F, () -> Ingredient.of(ItemTagsCoFH.INGOTS_ELECTRUM));
+        armorMaterialInvar = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":invar", 15, new int[]{2, 5, 7, 2}, 15, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(ItemTagsCoFH.INGOTS_INVAR));
+        armorMaterialConstantan = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":constantan", 8, new int[]{1, 4, 4, 2}, 12, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(ItemTagsCoFH.INGOTS_CONSTANTAN));
 
         CreativeModeTab combat = CreativeModeTab.TAB_COMBAT;
         CreativeModeTab tools = CreativeModeTab.TAB_TOOLS;
@@ -66,15 +64,15 @@ public class TComItems {
 
     // region TOOL MATERIALS
     public static final Tier TOOL_MATERIAL_COPPER = new ItemTierCoFH(1, 160, 4.5F, 1.5F, 9, () -> Ingredient.of(Tags.Items.INGOTS_COPPER));
-    public static final Tier TOOL_MATERIAL_TIN = new ItemTierCoFH(0, 16, 13.0F, 0.0F, 18, () -> Ingredient.of(CoFHTags.Items.INGOTS_TIN));
-    public static final Tier TOOL_MATERIAL_LEAD = new ItemTierCoFH(1, 32, 12.0F, 1.0F, 16, () -> Ingredient.of(CoFHTags.Items.INGOTS_LEAD));
-    public static final Tier TOOL_MATERIAL_SILVER = new ItemTierCoFH(0, 24, 14.0F, 0.0F, 30, () -> Ingredient.of(CoFHTags.Items.INGOTS_SILVER));
-    public static final Tier TOOL_MATERIAL_NICKEL = new ItemTierCoFH(2, 225, 7.0F, 2.5F, 12, () -> Ingredient.of(CoFHTags.Items.INGOTS_NICKEL));
+    public static final Tier TOOL_MATERIAL_TIN = new ItemTierCoFH(0, 16, 13.0F, 0.0F, 18, () -> Ingredient.of(ItemTagsCoFH.INGOTS_TIN));
+    public static final Tier TOOL_MATERIAL_LEAD = new ItemTierCoFH(1, 32, 12.0F, 1.0F, 16, () -> Ingredient.of(ItemTagsCoFH.INGOTS_LEAD));
+    public static final Tier TOOL_MATERIAL_SILVER = new ItemTierCoFH(0, 24, 14.0F, 0.0F, 30, () -> Ingredient.of(ItemTagsCoFH.INGOTS_SILVER));
+    public static final Tier TOOL_MATERIAL_NICKEL = new ItemTierCoFH(2, 225, 7.0F, 2.5F, 12, () -> Ingredient.of(ItemTagsCoFH.INGOTS_NICKEL));
 
-    public static final Tier TOOL_MATERIAL_BRONZE = new ItemTierCoFH(2, 325, 5.5F, 2.0F, 16, () -> Ingredient.of(CoFHTags.Items.INGOTS_BRONZE));
-    public static final Tier TOOL_MATERIAL_ELECTRUM = new ItemTierCoFH(0, 96, 13.0F, 0.0F, 28, () -> Ingredient.of(CoFHTags.Items.INGOTS_ELECTRUM));
-    public static final Tier TOOL_MATERIAL_INVAR = new ItemTierCoFH(2, 300, 7.0F, 2.5F, 13, () -> Ingredient.of(CoFHTags.Items.INGOTS_INVAR));
-    public static final Tier TOOL_MATERIAL_CONSTANTAN = new ItemTierCoFH(1, 250, 5.5F, 2.0F, 10, () -> Ingredient.of(CoFHTags.Items.INGOTS_CONSTANTAN));
+    public static final Tier TOOL_MATERIAL_BRONZE = new ItemTierCoFH(2, 325, 5.5F, 2.0F, 16, () -> Ingredient.of(ItemTagsCoFH.INGOTS_BRONZE));
+    public static final Tier TOOL_MATERIAL_ELECTRUM = new ItemTierCoFH(0, 96, 13.0F, 0.0F, 28, () -> Ingredient.of(ItemTagsCoFH.INGOTS_ELECTRUM));
+    public static final Tier TOOL_MATERIAL_INVAR = new ItemTierCoFH(2, 300, 7.0F, 2.5F, 13, () -> Ingredient.of(ItemTagsCoFH.INGOTS_INVAR));
+    public static final Tier TOOL_MATERIAL_CONSTANTAN = new ItemTierCoFH(1, 250, 5.5F, 2.0F, 10, () -> Ingredient.of(ItemTagsCoFH.INGOTS_CONSTANTAN));
     // endregion
 
     // region ARMOR MATERIALS
