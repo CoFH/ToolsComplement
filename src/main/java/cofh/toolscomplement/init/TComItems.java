@@ -1,9 +1,7 @@
 package cofh.toolscomplement.init;
 
-import cofh.core.item.ArmorItemCoFH;
-import cofh.lib.item.ArmorMaterialCoFH;
-import cofh.lib.item.ItemTierCoFH;
-import cofh.lib.item.impl.*;
+import cofh.core.item.*;
+import cofh.lib.item.*;
 import cofh.lib.util.helpers.MathHelper;
 import cofh.lib.util.references.CoFHTags;
 import cofh.toolscomplement.ToolsComplement;
@@ -13,7 +11,7 @@ import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.Tags;
 
-import static cofh.lib.util.constants.Constants.ID_TOOLS_COMPLEMENT;
+import static cofh.lib.util.constants.ModIds.ID_TOOLS_COMPLEMENT;
 import static cofh.toolscomplement.ToolsComplement.ITEMS;
 import static cofh.toolscomplement.init.TComFlags.getFlag;
 

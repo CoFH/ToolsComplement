@@ -4,7 +4,7 @@ import cofh.lib.util.flags.FlagManager;
 
 import java.util.function.BooleanSupplier;
 
-import static cofh.lib.util.constants.Constants.ID_TOOLS_COMPLEMENT;
+import static cofh.lib.util.constants.ModIds.ID_TOOLS_COMPLEMENT;
 
 public class TComFlags {
 

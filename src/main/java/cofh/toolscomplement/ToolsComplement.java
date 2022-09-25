@@ -17,7 +17,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import static cofh.lib.util.constants.Constants.ID_TOOLS_COMPLEMENT;
+import static cofh.lib.util.constants.ModIds.ID_TOOLS_COMPLEMENT;
 
 @Mod (ID_TOOLS_COMPLEMENT)
 public class ToolsComplement {

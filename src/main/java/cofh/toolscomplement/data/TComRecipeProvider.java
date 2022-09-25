@@ -15,7 +15,7 @@ import net.minecraftforge.common.Tags;
 
 import java.util.function.Consumer;
 
-import static cofh.lib.util.constants.Constants.ID_TOOLS_COMPLEMENT;
+import static cofh.lib.util.constants.ModIds.ID_TOOLS_COMPLEMENT;
 import static cofh.toolscomplement.ToolsComplement.ITEMS;
 
 public class TComRecipeProvider extends RecipeProviderCoFH {
