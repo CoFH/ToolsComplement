@@ -1,6 +1,6 @@
 package cofh.toolscomplement.data;
 
-import cofh.lib.util.references.CoFHTags;
+import cofh.lib.tags.ItemTagsCoFH;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.data.tags.ItemTagsProvider;
@@ -47,87 +47,87 @@ public class TComTagsProvider {
         @Override
         protected void addTags() {
 
-            tag(CoFHTags.Items.ARMOR_COPPER).add(
+            tag(ItemTagsCoFH.ARMOR_COPPER).add(
                     ITEMS.get("copper_boots"),
                     ITEMS.get("copper_chestplate"),
                     ITEMS.get("copper_helmet"),
                     ITEMS.get("copper_leggings")
             );
-            tag(CoFHTags.Items.ARMOR_TIN).add(
+            tag(ItemTagsCoFH.ARMOR_TIN).add(
                     ITEMS.get("tin_boots"),
                     ITEMS.get("tin_chestplate"),
                     ITEMS.get("tin_helmet"),
                     ITEMS.get("tin_leggings")
             );
-            tag(CoFHTags.Items.ARMOR_LEAD).add(
+            tag(ItemTagsCoFH.ARMOR_LEAD).add(
                     ITEMS.get("lead_boots"),
                     ITEMS.get("lead_chestplate"),
                     ITEMS.get("lead_helmet"),
                     ITEMS.get("lead_leggings")
             );
-            tag(CoFHTags.Items.ARMOR_SILVER).add(
+            tag(ItemTagsCoFH.ARMOR_SILVER).add(
                     ITEMS.get("silver_boots"),
                     ITEMS.get("silver_chestplate"),
                     ITEMS.get("silver_helmet"),
                     ITEMS.get("silver_leggings")
             );
-            tag(CoFHTags.Items.ARMOR_NICKEL).add(
+            tag(ItemTagsCoFH.ARMOR_NICKEL).add(
                     ITEMS.get("nickel_boots"),
                     ITEMS.get("nickel_chestplate"),
                     ITEMS.get("nickel_helmet"),
                     ITEMS.get("nickel_leggings")
             );
-            tag(CoFHTags.Items.ARMOR_BRONZE).add(
+            tag(ItemTagsCoFH.ARMOR_BRONZE).add(
                     ITEMS.get("bronze_boots"),
                     ITEMS.get("bronze_chestplate"),
                     ITEMS.get("bronze_helmet"),
                     ITEMS.get("bronze_leggings")
             );
-            tag(CoFHTags.Items.ARMOR_ELECTRUM).add(
+            tag(ItemTagsCoFH.ARMOR_ELECTRUM).add(
                     ITEMS.get("electrum_boots"),
                     ITEMS.get("electrum_chestplate"),
                     ITEMS.get("electrum_helmet"),
                     ITEMS.get("electrum_leggings")
             );
-            tag(CoFHTags.Items.ARMOR_INVAR).add(
+            tag(ItemTagsCoFH.ARMOR_INVAR).add(
                     ITEMS.get("invar_boots"),
                     ITEMS.get("invar_chestplate"),
                     ITEMS.get("invar_helmet"),
                     ITEMS.get("invar_leggings")
             );
-            tag(CoFHTags.Items.ARMOR_CONSTANTAN).add(
+            tag(ItemTagsCoFH.ARMOR_CONSTANTAN).add(
                     ITEMS.get("constantan_boots"),
                     ITEMS.get("constantan_chestplate"),
                     ITEMS.get("constantan_helmet"),
                     ITEMS.get("constantan_leggings")
             );
 
-            tag(CoFHTags.Items.TOOLS_IRON).add(
+            tag(ItemTagsCoFH.TOOLS_IRON).add(
                     ITEMS.get("iron_excavator"),
                     ITEMS.get("iron_hammer"),
                     ITEMS.get("iron_sickle"),
                     ITEMS.get("iron_knife")
             );
-            tag(CoFHTags.Items.TOOLS_GOLD).add(
+            tag(ItemTagsCoFH.TOOLS_GOLD).add(
                     ITEMS.get("gold_excavator"),
                     ITEMS.get("gold_hammer"),
                     ITEMS.get("gold_sickle"),
                     ITEMS.get("gold_knife")
             );
-            tag(CoFHTags.Items.TOOLS_DIAMOND).add(
+            tag(ItemTagsCoFH.TOOLS_DIAMOND).add(
                     ITEMS.get("diamond_excavator"),
                     ITEMS.get("diamond_hammer"),
                     ITEMS.get("diamond_sickle"),
                     ITEMS.get("diamond_knife")
             );
-            tag(CoFHTags.Items.TOOLS_NETHERITE).add(
+            tag(ItemTagsCoFH.TOOLS_NETHERITE).add(
                     ITEMS.get("netherite_excavator"),
                     ITEMS.get("netherite_hammer"),
                     ITEMS.get("netherite_sickle"),
                     ITEMS.get("netherite_knife")
             );
 
-            tag(CoFHTags.Items.TOOLS_COPPER).add(
+            tag(ItemTagsCoFH.TOOLS_COPPER).add(
                     ITEMS.get("copper_axe"),
                     ITEMS.get("copper_hoe"),
                     ITEMS.get("copper_pickaxe"),
@@ -138,7 +138,7 @@ public class TComTagsProvider {
                     ITEMS.get("copper_sickle"),
                     ITEMS.get("copper_knife")
             );
-            tag(CoFHTags.Items.TOOLS_TIN).add(
+            tag(ItemTagsCoFH.TOOLS_TIN).add(
                     ITEMS.get("tin_axe"),
                     ITEMS.get("tin_hoe"),
                     ITEMS.get("tin_pickaxe"),
@@ -149,7 +149,7 @@ public class TComTagsProvider {
                     ITEMS.get("tin_sickle"),
                     ITEMS.get("tin_knife")
             );
-            tag(CoFHTags.Items.TOOLS_LEAD).add(
+            tag(ItemTagsCoFH.TOOLS_LEAD).add(
                     ITEMS.get("lead_axe"),
                     ITEMS.get("lead_hoe"),
                     ITEMS.get("lead_pickaxe"),
@@ -160,7 +160,7 @@ public class TComTagsProvider {
                     ITEMS.get("lead_sickle"),
                     ITEMS.get("lead_knife")
             );
-            tag(CoFHTags.Items.TOOLS_SILVER).add(
+            tag(ItemTagsCoFH.TOOLS_SILVER).add(
                     ITEMS.get("silver_axe"),
                     ITEMS.get("silver_hoe"),
                     ITEMS.get("silver_pickaxe"),
@@ -171,7 +171,7 @@ public class TComTagsProvider {
                     ITEMS.get("silver_sickle"),
                     ITEMS.get("silver_knife")
             );
-            tag(CoFHTags.Items.TOOLS_NICKEL).add(
+            tag(ItemTagsCoFH.TOOLS_NICKEL).add(
                     ITEMS.get("nickel_axe"),
                     ITEMS.get("nickel_hoe"),
                     ITEMS.get("nickel_pickaxe"),
@@ -182,7 +182,7 @@ public class TComTagsProvider {
                     ITEMS.get("nickel_sickle"),
                     ITEMS.get("nickel_knife")
             );
-            tag(CoFHTags.Items.TOOLS_BRONZE).add(
+            tag(ItemTagsCoFH.TOOLS_BRONZE).add(
                     ITEMS.get("bronze_axe"),
                     ITEMS.get("bronze_hoe"),
                     ITEMS.get("bronze_pickaxe"),
@@ -193,7 +193,7 @@ public class TComTagsProvider {
                     ITEMS.get("bronze_sickle"),
                     ITEMS.get("bronze_knife")
             );
-            tag(CoFHTags.Items.TOOLS_ELECTRUM).add(
+            tag(ItemTagsCoFH.TOOLS_ELECTRUM).add(
                     ITEMS.get("electrum_axe"),
                     ITEMS.get("electrum_hoe"),
                     ITEMS.get("electrum_pickaxe"),
@@ -204,7 +204,7 @@ public class TComTagsProvider {
                     ITEMS.get("electrum_sickle"),
                     ITEMS.get("electrum_knife")
             );
-            tag(CoFHTags.Items.TOOLS_INVAR).add(
+            tag(ItemTagsCoFH.TOOLS_INVAR).add(
                     ITEMS.get("invar_axe"),
                     ITEMS.get("invar_hoe"),
                     ITEMS.get("invar_pickaxe"),
@@ -215,7 +215,7 @@ public class TComTagsProvider {
                     ITEMS.get("invar_sickle"),
                     ITEMS.get("invar_knife")
             );
-            tag(CoFHTags.Items.TOOLS_CONSTANTAN).add(
+            tag(ItemTagsCoFH.TOOLS_CONSTANTAN).add(
                     ITEMS.get("constantan_axe"),
                     ITEMS.get("constantan_hoe"),
                     ITEMS.get("constantan_pickaxe"),
