@@ -1,6 +1,6 @@
 package cofh.toolscomplement.config;
 
-import cofh.lib.config.IBaseConfig;
+import cofh.core.config.IBaseConfig;
 import net.minecraftforge.common.ForgeConfigSpec;
 
 public class ArmorConfig implements IBaseConfig {
