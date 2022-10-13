@@ -15,10 +15,6 @@
   },
   "conditions": [
     {
-      "flag": "lead_armor",
-      "type": "tools_complement:flag"
-    },
-    {
       "tag": "forge:ingots/lead",
       "type": "cofh_core:tag_exists"
     }

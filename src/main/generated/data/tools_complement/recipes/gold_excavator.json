@@ -21,10 +21,6 @@
   },
   "conditions": [
     {
-      "flag": "gold_tools",
-      "type": "tools_complement:flag"
-    },
-    {
       "tag": "forge:ingots/gold",
       "type": "cofh_core:tag_exists"
     }

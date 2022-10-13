@@ -17,10 +17,6 @@
   },
   "conditions": [
     {
-      "flag": "diamond_tools",
-      "type": "tools_complement:flag"
-    },
-    {
       "tag": "forge:gems/diamond",
       "type": "cofh_core:tag_exists"
     }

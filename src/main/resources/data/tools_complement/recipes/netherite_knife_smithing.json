@@ -11,10 +11,6 @@
   },
   "conditions": [
     {
-      "flag": "netherite_tools",
-      "type": "tools_complement:flag"
-    },
-    {
       "tag": "forge:ingots/netherite",
       "type": "cofh_core:tag_exists"
     }

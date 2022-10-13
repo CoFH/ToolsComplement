@@ -17,10 +17,6 @@
   },
   "conditions": [
     {
-      "flag": "nickel_tools",
-      "type": "tools_complement:flag"
-    },
-    {
       "tag": "forge:ingots/nickel",
       "type": "cofh_core:tag_exists"
     }
