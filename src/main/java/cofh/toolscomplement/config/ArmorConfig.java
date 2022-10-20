@@ -3,6 +3,8 @@ package cofh.toolscomplement.config;
 import cofh.core.config.IBaseConfig;
 import net.minecraftforge.common.ForgeConfigSpec;
 
+import java.util.function.Supplier;
+
 public class ArmorConfig implements IBaseConfig {
 
     protected String name;
@@ -12,11 +14,11 @@ public class ArmorConfig implements IBaseConfig {
     protected float toughness;
     protected float knockbackResist;
 
-    private ForgeConfigSpec.IntValue configDurabilityFactor;
-    private ForgeConfigSpec.IntValue[] configDefenseAmounts = new ForgeConfigSpec.IntValue[4];
-    private ForgeConfigSpec.IntValue configEnchantability;
-    private ForgeConfigSpec.DoubleValue configToughness;
-    private ForgeConfigSpec.DoubleValue configKnockbackResist;
+    private Supplier<Integer> configDurabilityFactor;
+    private Supplier<Integer>[] configDefenseAmounts = new Supplier[4];
+    private Supplier<Integer> configEnchantability;
+    private Supplier<Double> configToughness;
+    private Supplier<Double> configKnockbackResist;
 
     public ArmorConfig(String name, int durabilityFactor, int[] defenseAmounts, int enchantability, float toughness, float knockbackResist) {
 
