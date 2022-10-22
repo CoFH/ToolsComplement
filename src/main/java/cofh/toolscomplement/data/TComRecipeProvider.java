@@ -2,7 +2,6 @@ package cofh.toolscomplement.data;
 
 import cofh.lib.data.RecipeProviderCoFH;
 import cofh.lib.tags.ItemTagsCoFH;
-import cofh.lib.util.flags.FlagRecipeCondition;
 import cofh.lib.util.flags.TagExistsRecipeCondition;
 import cofh.toolscomplement.init.TComFlags;
 import net.minecraft.data.DataGenerator;
