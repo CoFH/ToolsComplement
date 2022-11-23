@@ -22,10 +22,10 @@ public class TComConfig {
         FMLJavaModLoadingContext.get().getModEventBus().register(TComConfig.class);
         registered = true;
 
-        genServerConfig();
+        // genServerConfig();
         genClientConfig();
 
-        ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, serverSpec);
+        // ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, serverSpec);
         ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, clientSpec);
     }
 
