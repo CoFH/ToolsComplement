@@ -1,26 +1,22 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "X X",
-    "XXX",
-    "XXX"
+  "conditions": [
+    {
+      "type": "cofh_core:tag_exists",
+      "tag": "forge:ingots/bronze"
+    }
   ],
   "key": {
     "X": {
       "tag": "forge:ingots/bronze"
     }
   },
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
   "result": {
     "item": "tools_complement:bronze_chestplate"
-  },
-  "conditions": [
-    {
-      "flag": "bronze_armor",
-      "type": "tools_complement:flag"
-    },
-    {
-      "tag": "forge:ingots/bronze",
-      "type": "cofh_core:tag_exists"
-    }
-  ]
+  }
 }

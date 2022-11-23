@@ -1,9 +1,10 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    " Y ",
-    "X#X",
-    " # "
+  "conditions": [
+    {
+      "type": "cofh_core:tag_exists",
+      "tag": "forge:ingots/gold"
+    }
   ],
   "key": {
     "#": {
@@ -16,17 +17,12 @@
       "tag": "forge:storage_blocks/gold"
     }
   },
+  "pattern": [
+    " Y ",
+    "X#X",
+    " # "
+  ],
   "result": {
     "item": "tools_complement:gold_excavator"
-  },
-  "conditions": [
-    {
-      "flag": "gold_tools",
-      "type": "tools_complement:flag"
-    },
-    {
-      "tag": "forge:ingots/gold",
-      "type": "cofh_core:tag_exists"
-    }
-  ]
+  }
 }

@@ -1,25 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "XXX",
-    "X X"
+  "conditions": [
+    {
+      "type": "cofh_core:tag_exists",
+      "tag": "forge:ingots/silver"
+    }
   ],
   "key": {
     "X": {
       "tag": "forge:ingots/silver"
     }
   },
+  "pattern": [
+    "XXX",
+    "X X"
+  ],
   "result": {
     "item": "tools_complement:silver_helmet"
-  },
-  "conditions": [
-    {
-      "flag": "silver_armor",
-      "type": "tools_complement:flag"
-    },
-    {
-      "tag": "forge:ingots/silver",
-      "type": "cofh_core:tag_exists"
-    }
-  ]
+  }
 }

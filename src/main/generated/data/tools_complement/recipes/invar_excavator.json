@@ -1,9 +1,10 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    " Y ",
-    "X#X",
-    " # "
+  "conditions": [
+    {
+      "type": "cofh_core:tag_exists",
+      "tag": "forge:ingots/invar"
+    }
   ],
   "key": {
     "#": {
@@ -16,17 +17,12 @@
       "tag": "forge:storage_blocks/invar"
     }
   },
+  "pattern": [
+    " Y ",
+    "X#X",
+    " # "
+  ],
   "result": {
     "item": "tools_complement:invar_excavator"
-  },
-  "conditions": [
-    {
-      "flag": "invar_tools",
-      "type": "tools_complement:flag"
-    },
-    {
-      "tag": "forge:ingots/invar",
-      "type": "cofh_core:tag_exists"
-    }
-  ]
+  }
 }

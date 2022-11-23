@@ -1,9 +1,10 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "XYX",
-    "X#X",
-    " # "
+  "conditions": [
+    {
+      "type": "cofh_core:tag_exists",
+      "tag": "forge:ingots/nickel"
+    }
   ],
   "key": {
     "#": {
@@ -16,17 +17,12 @@
       "tag": "forge:storage_blocks/nickel"
     }
   },
+  "pattern": [
+    "XYX",
+    "X#X",
+    " # "
+  ],
   "result": {
     "item": "tools_complement:nickel_hammer"
-  },
-  "conditions": [
-    {
-      "flag": "nickel_tools",
-      "type": "tools_complement:flag"
-    },
-    {
-      "tag": "forge:ingots/nickel",
-      "type": "cofh_core:tag_exists"
-    }
-  ]
+  }
 }

@@ -1,26 +1,22 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "XXX",
-    "X X",
-    "X X"
+  "conditions": [
+    {
+      "type": "cofh_core:tag_exists",
+      "tag": "forge:ingots/tin"
+    }
   ],
   "key": {
     "X": {
       "tag": "forge:ingots/tin"
     }
   },
+  "pattern": [
+    "XXX",
+    "X X",
+    "X X"
+  ],
   "result": {
     "item": "tools_complement:tin_leggings"
-  },
-  "conditions": [
-    {
-      "flag": "tin_armor",
-      "type": "tools_complement:flag"
-    },
-    {
-      "tag": "forge:ingots/tin",
-      "type": "cofh_core:tag_exists"
-    }
-  ]
+  }
 }

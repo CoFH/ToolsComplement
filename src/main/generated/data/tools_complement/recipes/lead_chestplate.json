@@ -1,26 +1,22 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "X X",
-    "XXX",
-    "XXX"
+  "conditions": [
+    {
+      "type": "cofh_core:tag_exists",
+      "tag": "forge:ingots/lead"
+    }
   ],
   "key": {
     "X": {
       "tag": "forge:ingots/lead"
     }
   },
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
   "result": {
     "item": "tools_complement:lead_chestplate"
-  },
-  "conditions": [
-    {
-      "flag": "lead_armor",
-      "type": "tools_complement:flag"
-    },
-    {
-      "tag": "forge:ingots/lead",
-      "type": "cofh_core:tag_exists"
-    }
-  ]
+  }
 }

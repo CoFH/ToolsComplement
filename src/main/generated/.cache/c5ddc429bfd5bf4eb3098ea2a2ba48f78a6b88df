@@ -1,0 +1,23 @@
+// 1.19.2	2022-11-23T10:14:08.3725596	Tool's Complement: Item Tags
+596efdaf3c602319b15bb2a4e46d1c0db97e8749 data/forge/tags/items/armor/bronze.json
+29380f1aafda24bf750db9caf4df107ecc114dcd data/forge/tags/items/armor/constantan.json
+f5bd0c4c605b8b1a58ccc5698753f14d76e9fdcb data/forge/tags/items/armor/copper.json
+e40c6065d8e56592cba7be79536d5de4147b4911 data/forge/tags/items/armor/electrum.json
+c1d7e34ddcebe8b28b22e21ab603dbb2a5f3fee6 data/forge/tags/items/armor/invar.json
+7f49111c19367aa642c3aa1c2fa2c3ed4ecda10a data/forge/tags/items/armor/lead.json
+7da46f660075ca9ae21b63a806e0ce4ade264da0 data/forge/tags/items/armor/nickel.json
+2cdb5bdf2f762d1d68e6e8bfcbd8f0c420054d05 data/forge/tags/items/armor/silver.json
+23cd6f159679a0ccae5c4301fa1fce10eb78bb94 data/forge/tags/items/armor/tin.json
+69da56b804283083406110f93292b8c5703cfb81 data/forge/tags/items/tools/bronze.json
+77c166ec6a96fc20c3bd907aa86b29a6bb22dc69 data/forge/tags/items/tools/constantan.json
+673f1ee052557ca9c806477c766386ee3741f00b data/forge/tags/items/tools/copper.json
+1e5cb1b643c3438947fe71bd881bc35fc6e1550d data/forge/tags/items/tools/diamond.json
+adb931912017b991209f3081727bc6f2a06b7800 data/forge/tags/items/tools/electrum.json
+6e1b23e501ded7cda51d0464ebed2621549b7013 data/forge/tags/items/tools/gold.json
+db5ce84cc2669cc8cbc27878968267ca85769cd3 data/forge/tags/items/tools/invar.json
+c298f4d6b5e4dba6d01cf130e55258b315479b87 data/forge/tags/items/tools/iron.json
+d8532dbb6bcea3a2315ffe37750c24f94f1e951b data/forge/tags/items/tools/lead.json
+797313b4ff44e1d6869d8c5eacdacc26fb6fecba data/forge/tags/items/tools/netherite.json
+f4beaa72d82ecd74ba2baaac79e0d8f95f6ab8e1 data/forge/tags/items/tools/nickel.json
+5efc21f2131275c0e77104462a80a245389a89c9 data/forge/tags/items/tools/silver.json
+55804c8a2cf8f8a46731c38b6da562eeb87f3ebb data/forge/tags/items/tools/tin.json

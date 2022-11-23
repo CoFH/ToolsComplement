@@ -1,9 +1,10 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "XYX",
-    "X#X",
-    " # "
+  "conditions": [
+    {
+      "type": "cofh_core:tag_exists",
+      "tag": "forge:ingots/lead"
+    }
   ],
   "key": {
     "#": {
@@ -16,17 +17,12 @@
       "tag": "forge:storage_blocks/lead"
     }
   },
+  "pattern": [
+    "XYX",
+    "X#X",
+    " # "
+  ],
   "result": {
     "item": "tools_complement:lead_hammer"
-  },
-  "conditions": [
-    {
-      "flag": "lead_tools",
-      "type": "tools_complement:flag"
-    },
-    {
-      "tag": "forge:ingots/lead",
-      "type": "cofh_core:tag_exists"
-    }
-  ]
+  }
 }

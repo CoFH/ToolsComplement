@@ -1,9 +1,10 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "XYX",
-    "X#X",
-    " # "
+  "conditions": [
+    {
+      "type": "cofh_core:tag_exists",
+      "tag": "forge:ingots/bronze"
+    }
   ],
   "key": {
     "#": {
@@ -16,17 +17,12 @@
       "tag": "forge:storage_blocks/bronze"
     }
   },
+  "pattern": [
+    "XYX",
+    "X#X",
+    " # "
+  ],
   "result": {
     "item": "tools_complement:bronze_hammer"
-  },
-  "conditions": [
-    {
-      "flag": "bronze_tools",
-      "type": "tools_complement:flag"
-    },
-    {
-      "tag": "forge:ingots/bronze",
-      "type": "cofh_core:tag_exists"
-    }
-  ]
+  }
 }

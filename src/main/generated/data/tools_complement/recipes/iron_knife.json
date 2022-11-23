@@ -1,8 +1,10 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "X",
-    "#"
+  "conditions": [
+    {
+      "type": "cofh_core:tag_exists",
+      "tag": "forge:ingots/iron"
+    }
   ],
   "key": {
     "#": {
@@ -12,17 +14,11 @@
       "tag": "forge:ingots/iron"
     }
   },
+  "pattern": [
+    "X",
+    "#"
+  ],
   "result": {
     "item": "tools_complement:iron_knife"
-  },
-  "conditions": [
-    {
-      "flag": "iron_tools",
-      "type": "tools_complement:flag"
-    },
-    {
-      "tag": "forge:ingots/iron",
-      "type": "cofh_core:tag_exists"
-    }
-  ]
+  }
 }

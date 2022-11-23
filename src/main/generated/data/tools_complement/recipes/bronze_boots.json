@@ -1,25 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "X X",
-    "X X"
+  "conditions": [
+    {
+      "type": "cofh_core:tag_exists",
+      "tag": "forge:ingots/bronze"
+    }
   ],
   "key": {
     "X": {
       "tag": "forge:ingots/bronze"
     }
   },
+  "pattern": [
+    "X X",
+    "X X"
+  ],
   "result": {
     "item": "tools_complement:bronze_boots"
-  },
-  "conditions": [
-    {
-      "flag": "bronze_armor",
-      "type": "tools_complement:flag"
-    },
-    {
-      "tag": "forge:ingots/bronze",
-      "type": "cofh_core:tag_exists"
-    }
-  ]
+  }
 }

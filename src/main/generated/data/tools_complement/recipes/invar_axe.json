@@ -1,9 +1,10 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "XX",
-    "X#",
-    " #"
+  "conditions": [
+    {
+      "type": "cofh_core:tag_exists",
+      "tag": "forge:ingots/invar"
+    }
   ],
   "key": {
     "#": {
@@ -13,17 +14,12 @@
       "tag": "forge:ingots/invar"
     }
   },
+  "pattern": [
+    "XX",
+    "X#",
+    " #"
+  ],
   "result": {
     "item": "tools_complement:invar_axe"
-  },
-  "conditions": [
-    {
-      "flag": "invar_tools",
-      "type": "tools_complement:flag"
-    },
-    {
-      "tag": "forge:ingots/invar",
-      "type": "cofh_core:tag_exists"
-    }
-  ]
+  }
 }

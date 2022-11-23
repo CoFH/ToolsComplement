@@ -1,25 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "X X",
-    "X X"
+  "conditions": [
+    {
+      "type": "cofh_core:tag_exists",
+      "tag": "forge:ingots/nickel"
+    }
   ],
   "key": {
     "X": {
       "tag": "forge:ingots/nickel"
     }
   },
+  "pattern": [
+    "X X",
+    "X X"
+  ],
   "result": {
     "item": "tools_complement:nickel_boots"
-  },
-  "conditions": [
-    {
-      "flag": "nickel_armor",
-      "type": "tools_complement:flag"
-    },
-    {
-      "tag": "forge:ingots/nickel",
-      "type": "cofh_core:tag_exists"
-    }
-  ]
+  }
 }

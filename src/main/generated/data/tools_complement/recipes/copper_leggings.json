@@ -1,26 +1,22 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "XXX",
-    "X X",
-    "X X"
+  "conditions": [
+    {
+      "type": "cofh_core:tag_exists",
+      "tag": "forge:ingots/copper"
+    }
   ],
   "key": {
     "X": {
       "tag": "forge:ingots/copper"
     }
   },
+  "pattern": [
+    "XXX",
+    "X X",
+    "X X"
+  ],
   "result": {
     "item": "tools_complement:copper_leggings"
-  },
-  "conditions": [
-    {
-      "flag": "copper_armor",
-      "type": "tools_complement:flag"
-    },
-    {
-      "tag": "forge:ingots/copper",
-      "type": "cofh_core:tag_exists"
-    }
-  ]
+  }
 }

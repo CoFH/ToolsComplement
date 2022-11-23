@@ -1,26 +1,22 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "XXX",
-    "X X",
-    "X X"
+  "conditions": [
+    {
+      "type": "cofh_core:tag_exists",
+      "tag": "forge:ingots/constantan"
+    }
   ],
   "key": {
     "X": {
       "tag": "forge:ingots/constantan"
     }
   },
+  "pattern": [
+    "XXX",
+    "X X",
+    "X X"
+  ],
   "result": {
     "item": "tools_complement:constantan_leggings"
-  },
-  "conditions": [
-    {
-      "flag": "constantan_armor",
-      "type": "tools_complement:flag"
-    },
-    {
-      "tag": "forge:ingots/constantan",
-      "type": "cofh_core:tag_exists"
-    }
-  ]
+  }
 }

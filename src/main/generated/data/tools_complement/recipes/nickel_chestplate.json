@@ -1,26 +1,22 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "X X",
-    "XXX",
-    "XXX"
+  "conditions": [
+    {
+      "type": "cofh_core:tag_exists",
+      "tag": "forge:ingots/nickel"
+    }
   ],
   "key": {
     "X": {
       "tag": "forge:ingots/nickel"
     }
   },
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
   "result": {
     "item": "tools_complement:nickel_chestplate"
-  },
-  "conditions": [
-    {
-      "flag": "nickel_armor",
-      "type": "tools_complement:flag"
-    },
-    {
-      "tag": "forge:ingots/nickel",
-      "type": "cofh_core:tag_exists"
-    }
-  ]
+  }
 }

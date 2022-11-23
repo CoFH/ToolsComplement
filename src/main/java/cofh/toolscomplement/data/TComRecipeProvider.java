@@ -2,7 +2,6 @@ package cofh.toolscomplement.data;
 
 import cofh.lib.data.RecipeProviderCoFH;
 import cofh.lib.tags.ItemTagsCoFH;
-import cofh.lib.util.flags.FlagRecipeCondition;
 import cofh.lib.util.flags.TagExistsRecipeCondition;
 import cofh.toolscomplement.init.TComFlags;
 import net.minecraft.data.DataGenerator;
@@ -80,7 +79,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern("#")
                 .unlockedBy("has_" + itemName, has(tag))
                 .save(withConditions(consumer)
-                        .addCondition(new FlagRecipeCondition(manager, prefix + "_tools"))
+                        // .addCondition(new FlagRecipeCondition(manager, prefix + "_tools"))
                         .addCondition(new TagExistsRecipeCondition(tag.location()))
                 );
 
@@ -92,7 +91,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern(" # ")
                 .unlockedBy("has_" + itemName, has(tag))
                 .save(withConditions(consumer)
-                        .addCondition(new FlagRecipeCondition(manager, prefix + "_tools"))
+                        // .addCondition(new FlagRecipeCondition(manager, prefix + "_tools"))
                         .addCondition(new TagExistsRecipeCondition(tag.location()))
                 );
 
@@ -104,7 +103,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern(" #")
                 .unlockedBy("has_" + itemName, has(tag))
                 .save(withConditions(consumer)
-                        .addCondition(new FlagRecipeCondition(manager, prefix + "_tools"))
+                        // .addCondition(new FlagRecipeCondition(manager, prefix + "_tools"))
                         .addCondition(new TagExistsRecipeCondition(tag.location()))
                 );
 
@@ -116,7 +115,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern(" #")
                 .unlockedBy("has_" + itemName, has(tag))
                 .save(withConditions(consumer)
-                        .addCondition(new FlagRecipeCondition(manager, prefix + "_tools"))
+                        // .addCondition(new FlagRecipeCondition(manager, prefix + "_tools"))
                         .addCondition(new TagExistsRecipeCondition(tag.location()))
                 );
 
@@ -128,7 +127,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern("#")
                 .unlockedBy("has_" + itemName, has(tag))
                 .save(withConditions(consumer)
-                        .addCondition(new FlagRecipeCondition(manager, prefix + "_tools"))
+                        // .addCondition(new FlagRecipeCondition(manager, prefix + "_tools"))
                         .addCondition(new TagExistsRecipeCondition(tag.location()))
                 );
     }
@@ -146,7 +145,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern(" # ")
                 .unlockedBy("has_" + itemName, has(tag))
                 .save(withConditions(consumer)
-                        .addCondition(new FlagRecipeCondition(manager, prefix + "_tools"))
+                        // .addCondition(new FlagRecipeCondition(manager, prefix + "_tools"))
                         .addCondition(new TagExistsRecipeCondition(tag.location()))
                 );
 
@@ -159,7 +158,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern(" # ")
                 .unlockedBy("has_" + itemName, has(tag))
                 .save(withConditions(consumer)
-                        .addCondition(new FlagRecipeCondition(manager, prefix + "_tools"))
+                        // .addCondition(new FlagRecipeCondition(manager, prefix + "_tools"))
                         .addCondition(new TagExistsRecipeCondition(tag.location()))
                 );
 
@@ -171,7 +170,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern("#X ")
                 .unlockedBy("has_" + itemName, has(tag))
                 .save(withConditions(consumer)
-                        .addCondition(new FlagRecipeCondition(manager, prefix + "_tools"))
+                        // .addCondition(new FlagRecipeCondition(manager, prefix + "_tools"))
                         .addCondition(new TagExistsRecipeCondition(tag.location()))
                 );
 
@@ -182,7 +181,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern("#")
                 .unlockedBy("has_" + itemName, has(tag))
                 .save(withConditions(consumer)
-                        .addCondition(new FlagRecipeCondition(manager, prefix + "_tools"))
+                        // .addCondition(new FlagRecipeCondition(manager, prefix + "_tools"))
                         .addCondition(new TagExistsRecipeCondition(tag.location()))
                 );
     }
@@ -197,7 +196,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern("X X")
                 .unlockedBy("has_" + itemName, has(tag))
                 .save(withConditions(consumer)
-                        .addCondition(new FlagRecipeCondition(manager, prefix + "_armor"))
+                        // .addCondition(new FlagRecipeCondition(manager, prefix + "_armor"))
                         .addCondition(new TagExistsRecipeCondition(tag.location()))
                 );
 
@@ -208,7 +207,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern("XXX")
                 .unlockedBy("has_" + itemName, has(tag))
                 .save(withConditions(consumer)
-                        .addCondition(new FlagRecipeCondition(manager, prefix + "_armor"))
+                        // .addCondition(new FlagRecipeCondition(manager, prefix + "_armor"))
                         .addCondition(new TagExistsRecipeCondition(tag.location()))
                 );
 
@@ -219,7 +218,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern("X X")
                 .unlockedBy("has_" + itemName, has(tag))
                 .save(withConditions(consumer)
-                        .addCondition(new FlagRecipeCondition(manager, prefix + "_armor"))
+                        // .addCondition(new FlagRecipeCondition(manager, prefix + "_armor"))
                         .addCondition(new TagExistsRecipeCondition(tag.location()))
                 );
 
@@ -229,7 +228,7 @@ public class TComRecipeProvider extends RecipeProviderCoFH {
                 .pattern("X X")
                 .unlockedBy("has_" + itemName, has(tag))
                 .save(withConditions(consumer)
-                        .addCondition(new FlagRecipeCondition(manager, prefix + "_armor"))
+                        // .addCondition(new FlagRecipeCondition(manager, prefix + "_armor"))
                         .addCondition(new TagExistsRecipeCondition(tag.location()))
                 );
     }

@@ -1,26 +1,22 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "XXX",
-    "X X",
-    "X X"
+  "conditions": [
+    {
+      "type": "cofh_core:tag_exists",
+      "tag": "forge:ingots/electrum"
+    }
   ],
   "key": {
     "X": {
       "tag": "forge:ingots/electrum"
     }
   },
+  "pattern": [
+    "XXX",
+    "X X",
+    "X X"
+  ],
   "result": {
     "item": "tools_complement:electrum_leggings"
-  },
-  "conditions": [
-    {
-      "flag": "electrum_armor",
-      "type": "tools_complement:flag"
-    },
-    {
-      "tag": "forge:ingots/electrum",
-      "type": "cofh_core:tag_exists"
-    }
-  ]
+  }
 }

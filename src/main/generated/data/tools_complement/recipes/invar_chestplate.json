@@ -1,26 +1,22 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "X X",
-    "XXX",
-    "XXX"
+  "conditions": [
+    {
+      "type": "cofh_core:tag_exists",
+      "tag": "forge:ingots/invar"
+    }
   ],
   "key": {
     "X": {
       "tag": "forge:ingots/invar"
     }
   },
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
   "result": {
     "item": "tools_complement:invar_chestplate"
-  },
-  "conditions": [
-    {
-      "flag": "invar_armor",
-      "type": "tools_complement:flag"
-    },
-    {
-      "tag": "forge:ingots/invar",
-      "type": "cofh_core:tag_exists"
-    }
-  ]
+  }
 }

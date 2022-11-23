@@ -1,9 +1,10 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "XXX",
-    " # ",
-    " # "
+  "conditions": [
+    {
+      "type": "cofh_core:tag_exists",
+      "tag": "forge:ingots/copper"
+    }
   ],
   "key": {
     "#": {
@@ -13,17 +14,12 @@
       "tag": "forge:ingots/copper"
     }
   },
+  "pattern": [
+    "XXX",
+    " # ",
+    " # "
+  ],
   "result": {
     "item": "tools_complement:copper_pickaxe"
-  },
-  "conditions": [
-    {
-      "flag": "copper_tools",
-      "type": "tools_complement:flag"
-    },
-    {
-      "tag": "forge:ingots/copper",
-      "type": "cofh_core:tag_exists"
-    }
-  ]
+  }
 }
