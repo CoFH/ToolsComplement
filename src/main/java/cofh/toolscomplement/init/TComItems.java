@@ -4,7 +4,6 @@ import cofh.core.item.*;
 import cofh.lib.item.*;
 import cofh.lib.tags.ItemTagsCoFH;
 import cofh.lib.util.helpers.MathHelper;
-import cofh.toolscomplement.ToolsComplement;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
@@ -13,6 +12,7 @@ import net.minecraftforge.common.Tags;
 
 import static cofh.lib.util.constants.ModIds.ID_TOOLS_COMPLEMENT;
 import static cofh.toolscomplement.ToolsComplement.ITEMS;
+import static cofh.toolscomplement.ToolsComplement.TCOM_GROUP;
 import static cofh.toolscomplement.init.TComFlags.getFlag;
 
 public class TComItems {
@@ -33,8 +33,8 @@ public class TComItems {
         armorMaterialInvar = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":invar", 15, new int[]{2, 5, 7, 2}, 15, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(ItemTagsCoFH.INGOTS_INVAR));
         armorMaterialConstantan = new ArmorMaterialCoFH(ID_TOOLS_COMPLEMENT + ":constantan", 8, new int[]{1, 4, 4, 2}, 12, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(ItemTagsCoFH.INGOTS_CONSTANTAN));
 
-        CreativeModeTab combat = CreativeModeTab.TAB_COMBAT;
-        CreativeModeTab tools = CreativeModeTab.TAB_TOOLS;
+        CreativeModeTab combat = TCOM_GROUP;
+        CreativeModeTab tools = TCOM_GROUP;
 
         registerExtraToolSet("iron", Tiers.IRON, tools, combat);
         registerExtraToolSet("gold", Tiers.GOLD, tools, combat);
@@ -96,29 +96,29 @@ public class TComItems {
 
     private static void registerStandardToolSet(String prefix, Tier tier, CreativeModeTab toolGroup, CreativeModeTab combatGroup) {
 
-        ITEMS.register(prefix + "_shovel", () -> new ShovelItemCoFH(tier, 1.5F, -3.0F, new Item.Properties().tab(toolGroup)).setDisplayGroup(() -> ToolsComplement.TCOM_GROUP).setShowInGroups(getFlag(prefix + "_tools")));
-        ITEMS.register(prefix + "_pickaxe", () -> new PickaxeItemCoFH(tier, 1, -2.8F, new Item.Properties().tab(toolGroup)).setDisplayGroup(() -> ToolsComplement.TCOM_GROUP).setShowInGroups(getFlag(prefix + "_tools")));
-        ITEMS.register(prefix + "_axe", () -> new AxeItemCoFH(tier, tier.getAttackDamageBonus() > 0 ? 8.0F - tier.getAttackDamageBonus() : 6.0F, MathHelper.clamp(-3.7F + tier.getSpeed() / 10, -3.2F, -3.0F), new Item.Properties().tab(toolGroup)).setDisplayGroup(() -> ToolsComplement.TCOM_GROUP).setShowInGroups(getFlag(prefix + "_tools")));
-        ITEMS.register(prefix + "_hoe", () -> new HoeItemCoFH(tier, -tier.getLevel(), Math.min(-3.0F + tier.getLevel(), 0.0F), new Item.Properties().tab(toolGroup)).setDisplayGroup(() -> ToolsComplement.TCOM_GROUP).setShowInGroups(getFlag(prefix + "_tools")));
+        ITEMS.register(prefix + "_shovel", () -> new ShovelItemCoFH(tier, 1.5F, -3.0F, new Item.Properties().tab(toolGroup)).setShowInGroups(getFlag(prefix + "_tools")));
+        ITEMS.register(prefix + "_pickaxe", () -> new PickaxeItemCoFH(tier, 1, -2.8F, new Item.Properties().tab(toolGroup)).setShowInGroups(getFlag(prefix + "_tools")));
+        ITEMS.register(prefix + "_axe", () -> new AxeItemCoFH(tier, tier.getAttackDamageBonus() > 0 ? 8.0F - tier.getAttackDamageBonus() : 6.0F, MathHelper.clamp(-3.7F + tier.getSpeed() / 10, -3.2F, -3.0F), new Item.Properties().tab(toolGroup)).setShowInGroups(getFlag(prefix + "_tools")));
+        ITEMS.register(prefix + "_hoe", () -> new HoeItemCoFH(tier, -tier.getLevel(), Math.min(-3.0F + tier.getLevel(), 0.0F), new Item.Properties().tab(toolGroup)).setShowInGroups(getFlag(prefix + "_tools")));
 
-        ITEMS.register(prefix + "_sword", () -> new SwordItemCoFH(tier, 3, -2.4F, new Item.Properties().tab(combatGroup)).setDisplayGroup(() -> ToolsComplement.TCOM_GROUP).setShowInGroups(getFlag(prefix + "_tools")));
+        ITEMS.register(prefix + "_sword", () -> new SwordItemCoFH(tier, 3, -2.4F, new Item.Properties().tab(combatGroup)).setShowInGroups(getFlag(prefix + "_tools")));
     }
 
     private static void registerExtraToolSet(String prefix, Tier tier, CreativeModeTab toolGroup, CreativeModeTab combatGroup) {
 
-        ITEMS.register(prefix + "_excavator", () -> new ExcavatorItem(tier, new Item.Properties().tab(toolGroup)).setDisplayGroup(() -> ToolsComplement.TCOM_GROUP).setShowInGroups(getFlag(prefix + "_tools")));
-        ITEMS.register(prefix + "_hammer", () -> new HammerItem(tier, new Item.Properties().tab(toolGroup)).setDisplayGroup(() -> ToolsComplement.TCOM_GROUP).setShowInGroups(getFlag(prefix + "_tools")));
-        ITEMS.register(prefix + "_sickle", () -> new SickleItem(tier, new Item.Properties().tab(toolGroup)).setDisplayGroup(() -> ToolsComplement.TCOM_GROUP).setShowInGroups(getFlag(prefix + "_tools")));
+        ITEMS.register(prefix + "_excavator", () -> new ExcavatorItem(tier, new Item.Properties().tab(toolGroup)).setShowInGroups(getFlag(prefix + "_tools")));
+        ITEMS.register(prefix + "_hammer", () -> new HammerItem(tier, new Item.Properties().tab(toolGroup)).setShowInGroups(getFlag(prefix + "_tools")));
+        ITEMS.register(prefix + "_sickle", () -> new SickleItem(tier, new Item.Properties().tab(toolGroup)).setShowInGroups(getFlag(prefix + "_tools")));
 
-        ITEMS.register(prefix + "_knife", () -> new KnifeItem(tier, new Item.Properties().tab(combatGroup)).setDisplayGroup(() -> ToolsComplement.TCOM_GROUP).setShowInGroups(getFlag(prefix + "_tools")));
+        ITEMS.register(prefix + "_knife", () -> new KnifeItem(tier, new Item.Properties().tab(combatGroup)).setShowInGroups(getFlag(prefix + "_tools")));
     }
 
     private static void registerArmorSet(String prefix, ArmorMaterial material, CreativeModeTab armorGroup) {
 
-        ITEMS.register(prefix + "_helmet", () -> new ArmorItemCoFH(material, EquipmentSlot.HEAD, new Item.Properties().tab(armorGroup)).setDisplayGroup(() -> ToolsComplement.TCOM_GROUP).setShowInGroups(getFlag(prefix + "_armor")));
-        ITEMS.register(prefix + "_chestplate", () -> new ArmorItemCoFH(material, EquipmentSlot.CHEST, new Item.Properties().tab(armorGroup)).setDisplayGroup(() -> ToolsComplement.TCOM_GROUP).setShowInGroups(getFlag(prefix + "_armor")));
-        ITEMS.register(prefix + "_leggings", () -> new ArmorItemCoFH(material, EquipmentSlot.LEGS, new Item.Properties().tab(armorGroup)).setDisplayGroup(() -> ToolsComplement.TCOM_GROUP).setShowInGroups(getFlag(prefix + "_armor")));
-        ITEMS.register(prefix + "_boots", () -> new ArmorItemCoFH(material, EquipmentSlot.FEET, new Item.Properties().tab(armorGroup)).setDisplayGroup(() -> ToolsComplement.TCOM_GROUP).setShowInGroups(getFlag(prefix + "_armor")));
+        ITEMS.register(prefix + "_helmet", () -> new ArmorItemCoFH(material, EquipmentSlot.HEAD, new Item.Properties().tab(armorGroup)).setShowInGroups(getFlag(prefix + "_armor")));
+        ITEMS.register(prefix + "_chestplate", () -> new ArmorItemCoFH(material, EquipmentSlot.CHEST, new Item.Properties().tab(armorGroup)).setShowInGroups(getFlag(prefix + "_armor")));
+        ITEMS.register(prefix + "_leggings", () -> new ArmorItemCoFH(material, EquipmentSlot.LEGS, new Item.Properties().tab(armorGroup)).setShowInGroups(getFlag(prefix + "_armor")));
+        ITEMS.register(prefix + "_boots", () -> new ArmorItemCoFH(material, EquipmentSlot.FEET, new Item.Properties().tab(armorGroup)).setShowInGroups(getFlag(prefix + "_armor")));
     }
     // endregion
 }
