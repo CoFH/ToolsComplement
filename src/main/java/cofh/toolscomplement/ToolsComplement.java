@@ -6,8 +6,6 @@ import cofh.toolscomplement.init.TComItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -86,7 +84,6 @@ public class ToolsComplement {
                 itemGroup = new CreativeModeTab(-1, ID_TOOLS_COMPLEMENT) {
 
                     @Override
-                    @OnlyIn (Dist.CLIENT)
                     public ItemStack makeIcon() {
 
                         return new ItemStack(ITEMS.get("diamond_sickle"));
