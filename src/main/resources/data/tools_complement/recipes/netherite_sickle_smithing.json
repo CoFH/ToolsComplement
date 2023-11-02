@@ -1,13 +1,16 @@
 {
-  "type": "minecraft:smithing",
-  "base": {
-    "item": "tools_complement:diamond_sickle"
-  },
+  "type": "minecraft:smithing_transform",
   "addition": {
     "item": "minecraft:netherite_ingot"
   },
+  "base": {
+    "item": "tools_complement:diamond_sickle"
+  },
   "result": {
     "item": "tools_complement:netherite_sickle"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
   },
   "conditions": [
     {

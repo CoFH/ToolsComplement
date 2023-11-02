@@ -6,9 +6,9 @@ import java.util.function.Supplier;
 
 import static cofh.lib.util.constants.ModIds.ID_TOOLS_COMPLEMENT;
 
-public class TComFlags {
+public class ModFlags {
 
-    private TComFlags() {
+    private ModFlags() {
 
     }
 
