@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "equipment",
   "conditions": [
     {
       "type": "cofh_core:tag_exists",
@@ -21,5 +22,6 @@
   ],
   "result": {
     "item": "tools_complement:diamond_sickle"
-  }
+  },
+  "show_notification": true
 }

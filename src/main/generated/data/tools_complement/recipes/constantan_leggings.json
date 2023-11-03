@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "equipment",
   "conditions": [
     {
       "type": "cofh_core:tag_exists",
@@ -18,5 +19,6 @@
   ],
   "result": {
     "item": "tools_complement:constantan_leggings"
-  }
+  },
+  "show_notification": true
 }

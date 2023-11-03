@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "equipment",
   "conditions": [
     {
       "type": "cofh_core:tag_exists",
@@ -20,5 +21,6 @@
   ],
   "result": {
     "item": "tools_complement:invar_knife"
-  }
+  },
+  "show_notification": true
 }
