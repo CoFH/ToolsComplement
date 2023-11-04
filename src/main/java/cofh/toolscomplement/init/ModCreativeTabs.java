@@ -19,7 +19,7 @@ public class ModCreativeTabs {
 
     }
 
-    public static final RegistryObject<CreativeModeTab> TAB = CREATIVE_TABS.register(ID_TOOLS_COMPLEMENT, () -> CreativeModeTab.builder()
+    private static final RegistryObject<CreativeModeTab> TAB = CREATIVE_TABS.register(ID_TOOLS_COMPLEMENT, () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.tools_complement"))
             .icon(() -> new ItemStack(ITEMS.get("diamond_sickle")))
             .displayItems((parameters, output) -> ModItems.CREATIVE_TAB_ITEMS.forEach((item) -> output.accept(item.get())))
