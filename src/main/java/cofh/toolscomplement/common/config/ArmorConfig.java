@@ -1,6 +1,6 @@
-package cofh.toolscomplement.config;
+package cofh.toolscomplement.common.config;
 
-import cofh.core.config.IBaseConfig;
+import cofh.core.common.config.IBaseConfig;
 import net.minecraftforge.common.ForgeConfigSpec;
 
 import java.util.function.Supplier;

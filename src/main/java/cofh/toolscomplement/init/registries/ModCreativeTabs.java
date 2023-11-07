@@ -1,4 +1,4 @@
-package cofh.toolscomplement.init;
+package cofh.toolscomplement.init.registries;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;

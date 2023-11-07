@@ -1,9 +1,9 @@
 package cofh.toolscomplement;
 
-import cofh.core.event.CoreClientEvents;
+import cofh.core.client.event.CoreClientEvents;
 import cofh.lib.util.DeferredRegisterCoFH;
-import cofh.toolscomplement.init.ModCreativeTabs;
-import cofh.toolscomplement.init.ModItems;
+import cofh.toolscomplement.init.registries.ModCreativeTabs;
+import cofh.toolscomplement.init.registries.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -19,7 +19,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import static cofh.lib.util.constants.ModIds.ID_TOOLS_COMPLEMENT;
-import static cofh.toolscomplement.init.ModFlags.*;
+import static cofh.toolscomplement.init.registries.ModFlags.*;
 
 @Mod (ID_TOOLS_COMPLEMENT)
 public class ToolsComplement {

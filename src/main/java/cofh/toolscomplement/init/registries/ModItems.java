@@ -1,8 +1,8 @@
-package cofh.toolscomplement.init;
+package cofh.toolscomplement.init.registries;
 
-import cofh.core.item.*;
-import cofh.lib.item.*;
-import cofh.lib.tags.ItemTagsCoFH;
+import cofh.core.common.item.*;
+import cofh.lib.common.item.*;
+import cofh.lib.init.tags.ItemTagsCoFH;
 import cofh.lib.util.helpers.MathHelper;
 import com.google.common.collect.Sets;
 import net.minecraft.sounds.SoundEvents;

@@ -1,8 +1,8 @@
-package cofh.toolscomplement.data;
+package cofh.toolscomplement.init.data;
 
-import cofh.toolscomplement.data.providers.ModItemModelProvider;
-import cofh.toolscomplement.data.providers.ModRecipeProvider;
-import cofh.toolscomplement.data.providers.ModTagsProvider;
+import cofh.toolscomplement.init.data.providers.ModItemModelProvider;
+import cofh.toolscomplement.init.data.providers.ModRecipeProvider;
+import cofh.toolscomplement.init.data.providers.ModTagsProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraftforge.common.data.ExistingFileHelper;

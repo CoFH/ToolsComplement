@@ -1,6 +1,6 @@
-package cofh.toolscomplement.config;
+package cofh.toolscomplement.common.config;
 
-import cofh.core.config.ConfigGroup;
+import cofh.core.common.config.ConfigGroup;
 
 public class ToolConfigGroup extends ConfigGroup {
 

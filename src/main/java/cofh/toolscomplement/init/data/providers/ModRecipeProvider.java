@@ -1,9 +1,9 @@
-package cofh.toolscomplement.data.providers;
+package cofh.toolscomplement.init.data.providers;
 
-import cofh.lib.data.RecipeProviderCoFH;
-import cofh.lib.tags.ItemTagsCoFH;
+import cofh.lib.init.data.RecipeProviderCoFH;
+import cofh.lib.init.tags.ItemTagsCoFH;
 import cofh.lib.util.flags.TagExistsRecipeCondition;
-import cofh.toolscomplement.init.ModFlags;
+import cofh.toolscomplement.init.registries.ModFlags;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeCategory;

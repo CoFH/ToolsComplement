@@ -1,6 +1,6 @@
-package cofh.toolscomplement.data.providers;
+package cofh.toolscomplement.init.data.providers;
 
-import cofh.lib.tags.ItemTagsCoFH;
+import cofh.lib.init.tags.ItemTagsCoFH;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;

@@ -1,4 +1,4 @@
-package cofh.toolscomplement.init;
+package cofh.toolscomplement.init.registries;
 
 import cofh.lib.util.flags.FlagManager;
 
