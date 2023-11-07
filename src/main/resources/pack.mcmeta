@@ -1,7 +1,8 @@
 {
-    "pack": {
-        "description": "CoFH - Tool's Complement Resources",
-        "pack_format": 10,
-        "_comment": ""
-    }
+  "pack": {
+    "description": {
+      "translate": "pack.tools_complement.description"
+    },
+    "pack_format": 15
+  }
 }
