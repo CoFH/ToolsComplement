@@ -3,7 +3,7 @@ package cofh.toolscomplement.init.data.providers;
 import cofh.lib.init.data.RecipeProviderCoFH;
 import cofh.lib.init.tags.ItemTagsCoFH;
 import cofh.lib.util.flags.TagExistsRecipeCondition;
-import cofh.toolscomplement.init.registries.ModFlags;
+import cofh.toolscomplement.util.ModFlags;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeCategory;
