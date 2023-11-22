@@ -14,6 +14,7 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.LinkedHashSet;
 import java.util.function.Supplier;
 
+import static cofh.lib.util.Utils.itemProperties;
 import static cofh.lib.util.constants.ModIds.ID_TOOLS_COMPLEMENT;
 import static cofh.toolscomplement.ToolsComplement.ITEMS;
 
@@ -104,27 +105,27 @@ public class ModItems {
 
     private static void registerStandardToolSet(String prefix, Tier tier) {
 
-        registerWithTab(prefix + "_shovel", () -> new ShovelItemCoFH(tier, 1.5F, -3.0F, new Item.Properties()));
-        registerWithTab(prefix + "_pickaxe", () -> new PickaxeItemCoFH(tier, 1, -2.8F, new Item.Properties()));
-        registerWithTab(prefix + "_axe", () -> new AxeItemCoFH(tier, tier.getAttackDamageBonus() > 0 ? 8.0F - tier.getAttackDamageBonus() : 6.0F, MathHelper.clamp(-3.7F + tier.getSpeed() / 10, -3.2F, -3.0F), new Item.Properties()));
-        registerWithTab(prefix + "_hoe", () -> new HoeItemCoFH(tier, -tier.getLevel(), Math.min(-3.0F + tier.getLevel(), 0.0F), new Item.Properties()));
-        registerWithTab(prefix + "_sword", () -> new SwordItemCoFH(tier, 3, -2.4F, new Item.Properties()));
+        registerWithTab(prefix + "_shovel", () -> new ShovelItemCoFH(tier, 1.5F, -3.0F, itemProperties()));
+        registerWithTab(prefix + "_pickaxe", () -> new PickaxeItemCoFH(tier, 1, -2.8F, itemProperties()));
+        registerWithTab(prefix + "_axe", () -> new AxeItemCoFH(tier, tier.getAttackDamageBonus() > 0 ? 8.0F - tier.getAttackDamageBonus() : 6.0F, MathHelper.clamp(-3.7F + tier.getSpeed() / 10, -3.2F, -3.0F), itemProperties()));
+        registerWithTab(prefix + "_hoe", () -> new HoeItemCoFH(tier, -tier.getLevel(), Math.min(-3.0F + tier.getLevel(), 0.0F), itemProperties()));
+        registerWithTab(prefix + "_sword", () -> new SwordItemCoFH(tier, 3, -2.4F, itemProperties()));
     }
 
     private static void registerExtraToolSet(String prefix, Tier tier) {
 
-        registerWithTab(prefix + "_excavator", () -> new ExcavatorItem(tier, new Item.Properties()));
-        registerWithTab(prefix + "_hammer", () -> new HammerItem(tier, new Item.Properties()));
-        registerWithTab(prefix + "_sickle", () -> new SickleItem(tier, new Item.Properties()));
-        registerWithTab(prefix + "_knife", () -> new KnifeItem(tier, new Item.Properties()));
+        registerWithTab(prefix + "_excavator", () -> new ExcavatorItem(tier, itemProperties()));
+        registerWithTab(prefix + "_hammer", () -> new HammerItem(tier, itemProperties()));
+        registerWithTab(prefix + "_sickle", () -> new SickleItem(tier, itemProperties()));
+        registerWithTab(prefix + "_knife", () -> new KnifeItem(tier, itemProperties()));
     }
 
     private static void registerArmorSet(String prefix, ArmorMaterial material) {
 
-        registerWithTab(prefix + "_helmet", () -> new ArmorItemCoFH(material, ArmorItem.Type.HELMET, new Item.Properties()));
-        registerWithTab(prefix + "_chestplate", () -> new ArmorItemCoFH(material, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-        registerWithTab(prefix + "_leggings", () -> new ArmorItemCoFH(material, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-        registerWithTab(prefix + "_boots", () -> new ArmorItemCoFH(material, ArmorItem.Type.BOOTS, new Item.Properties()));
+        registerWithTab(prefix + "_helmet", () -> new ArmorItemCoFH(material, ArmorItem.Type.HELMET, itemProperties()));
+        registerWithTab(prefix + "_chestplate", () -> new ArmorItemCoFH(material, ArmorItem.Type.CHESTPLATE, itemProperties()));
+        registerWithTab(prefix + "_leggings", () -> new ArmorItemCoFH(material, ArmorItem.Type.LEGGINGS, itemProperties()));
+        registerWithTab(prefix + "_boots", () -> new ArmorItemCoFH(material, ArmorItem.Type.BOOTS, itemProperties()));
     }
     // endregion
 }
