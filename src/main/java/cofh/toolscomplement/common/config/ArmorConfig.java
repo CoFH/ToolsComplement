@@ -1,7 +1,7 @@
 package cofh.toolscomplement.common.config;
 
 import cofh.core.common.config.IBaseConfig;
-import net.minecraftforge.common.ForgeConfigSpec;
+import net.neoforged.neoforge.common.ModConfigSpec;
 
 import java.util.function.Supplier;
 
@@ -17,8 +17,8 @@ public class ArmorConfig implements IBaseConfig {
     private Supplier<Integer> configDurabilityFactor;
     private Supplier<Integer>[] configDefenseAmounts = new Supplier[4];
     private Supplier<Integer> configEnchantability;
-    private ForgeConfigSpec.DoubleValue configToughness;
-    private ForgeConfigSpec.DoubleValue configKnockbackResist;
+    private ModConfigSpec.DoubleValue configToughness;
+    private ModConfigSpec.DoubleValue configKnockbackResist;
 
     public ArmorConfig(String name, int durabilityFactor, int[] defenseAmounts, int enchantability, float toughness, float knockbackResist) {
 
@@ -58,7 +58,7 @@ public class ArmorConfig implements IBaseConfig {
     }
 
     @Override
-    public void apply(ForgeConfigSpec.Builder builder) {
+    public void apply(ModConfigSpec.Builder builder) {
 
         builder.push(name);
 

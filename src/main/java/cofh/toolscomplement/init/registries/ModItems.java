@@ -8,8 +8,8 @@ import com.google.common.collect.Sets;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraftforge.common.Tags;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.neoforge.common.Tags;
+import net.neoforged.neoforge.registries.RegistryObject;
 
 import java.util.LinkedHashSet;
 import java.util.function.Supplier;
