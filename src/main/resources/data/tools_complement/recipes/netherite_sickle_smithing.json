@@ -1,4 +1,14 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "cofh_core:flag_set",
+      "flag": "tools_complement:netherite_tools"
+    },
+    {
+      "type": "cofh_core:tag_exists",
+      "tag": "forge:ingots/netherite"
+    }
+  ],
   "type": "minecraft:smithing_transform",
   "addition": {
     "item": "minecraft:netherite_ingot"
@@ -11,15 +21,5 @@
   },
   "template": {
     "item": "minecraft:netherite_upgrade_smithing_template"
-  },
-  "conditions": [
-    {
-      "flag": "netherite_tools",
-      "type": "tools_complement:flag"
-    },
-    {
-      "tag": "forge:ingots/netherite",
-      "type": "cofh_core:tag_exists"
-    }
-  ]
+  }
 }

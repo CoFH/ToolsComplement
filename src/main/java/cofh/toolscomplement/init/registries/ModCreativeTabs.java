@@ -3,7 +3,7 @@ package cofh.toolscomplement.init.registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.neoforged.neoforge.registries.RegistryObject;
+import net.neoforged.neoforge.registries.DeferredHolder;
 
 import static cofh.lib.util.constants.ModIds.ID_TOOLS_COMPLEMENT;
 import static cofh.toolscomplement.ToolsComplement.CREATIVE_TABS;
@@ -19,7 +19,7 @@ public class ModCreativeTabs {
 
     }
 
-    private static final RegistryObject<CreativeModeTab> TAB = CREATIVE_TABS.register(ID_TOOLS_COMPLEMENT, () -> CreativeModeTab.builder()
+    private static final DeferredHolder<CreativeModeTab, CreativeModeTab> TAB = CREATIVE_TABS.register(ID_TOOLS_COMPLEMENT, () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.tools_complement"))
             .icon(() -> new ItemStack(ITEMS.get("diamond_sickle")))
             .displayItems((parameters, output) -> ModItems.CREATIVE_TAB_ITEMS.forEach((item) -> output.accept(item.get())))

@@ -1,12 +1,16 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "conditions": [
+  "neoforge:conditions": [
+    {
+      "type": "cofh_core:flag_set",
+      "flag": "tools_complement:bronze_armor"
+    },
     {
       "type": "cofh_core:tag_exists",
       "tag": "forge:ingots/bronze"
     }
   ],
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
   "key": {
     "X": {
       "tag": "forge:ingots/bronze"
@@ -19,6 +23,5 @@
   ],
   "result": {
     "item": "tools_complement:bronze_chestplate"
-  },
-  "show_notification": true
+  }
 }

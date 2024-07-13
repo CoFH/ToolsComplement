@@ -1,12 +1,16 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "conditions": [
+  "neoforge:conditions": [
+    {
+      "type": "cofh_core:flag_set",
+      "flag": "tools_complement:invar_tools"
+    },
     {
       "type": "cofh_core:tag_exists",
       "tag": "forge:ingots/invar"
     }
   ],
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
   "key": {
     "#": {
       "item": "minecraft:stick"
@@ -22,6 +26,5 @@
   ],
   "result": {
     "item": "tools_complement:invar_pickaxe"
-  },
-  "show_notification": true
+  }
 }

@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "cofh_core:flag_set",
+      "flag": "tools_complement:tin_tools"
+    },
+    {
+      "type": "cofh_core:tag_exists",
+      "tag": "forge:ingots/tin"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tools_complement:tin_hammer"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_tin_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:ingots/tin"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_tin_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tools_complement:tin_hammer"
+    ]
+  }
+}

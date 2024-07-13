@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "cofh_core:flag_set",
+      "flag": "tools_complement:invar_armor"
+    },
+    {
+      "type": "cofh_core:tag_exists",
+      "tag": "forge:ingots/invar"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_invar_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:ingots/invar"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tools_complement:invar_helmet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_invar_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tools_complement:invar_helmet"
+    ]
+  }
+}

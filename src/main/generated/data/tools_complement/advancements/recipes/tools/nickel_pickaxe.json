@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "cofh_core:flag_set",
+      "flag": "tools_complement:nickel_tools"
+    },
+    {
+      "type": "cofh_core:tag_exists",
+      "tag": "forge:ingots/nickel"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_nickel_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:ingots/nickel"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tools_complement:nickel_pickaxe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_nickel_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tools_complement:nickel_pickaxe"
+    ]
+  }
+}

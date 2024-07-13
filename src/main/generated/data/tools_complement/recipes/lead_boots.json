@@ -1,12 +1,16 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "conditions": [
+  "neoforge:conditions": [
+    {
+      "type": "cofh_core:flag_set",
+      "flag": "tools_complement:lead_armor"
+    },
     {
       "type": "cofh_core:tag_exists",
       "tag": "forge:ingots/lead"
     }
   ],
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
   "key": {
     "X": {
       "tag": "forge:ingots/lead"
@@ -18,6 +22,5 @@
   ],
   "result": {
     "item": "tools_complement:lead_boots"
-  },
-  "show_notification": true
+  }
 }

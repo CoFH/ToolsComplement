@@ -9,7 +9,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.Tags;
-import net.neoforged.neoforge.registries.RegistryObject;
+import net.neoforged.neoforge.registries.DeferredHolder;
 
 import java.util.LinkedHashSet;
 import java.util.function.Supplier;
@@ -24,11 +24,11 @@ public class ModItems {
 
     }
 
-    public static LinkedHashSet<RegistryObject<Item>> CREATIVE_TAB_ITEMS = Sets.newLinkedHashSet();
+    public static LinkedHashSet<DeferredHolder<Item, Item>> CREATIVE_TAB_ITEMS = Sets.newLinkedHashSet();
 
-    public static RegistryObject<Item> registerWithTab(final String name, final Supplier<Item> supplier) {
+    public static DeferredHolder<Item, Item> registerWithTab(final String name, final Supplier<Item> supplier) {
 
-        RegistryObject<Item> reg = ITEMS.register(name, supplier);
+        DeferredHolder<Item, Item> reg = ITEMS.register(name, supplier);
         CREATIVE_TAB_ITEMS.add(reg);
         return reg;
     }

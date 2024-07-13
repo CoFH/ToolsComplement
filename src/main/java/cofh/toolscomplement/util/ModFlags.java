@@ -1,9 +1,5 @@
 package cofh.toolscomplement.util;
 
-import cofh.lib.util.flags.FlagManager;
-
-import java.util.function.Supplier;
-
 import static cofh.lib.util.constants.ModIds.ID_TOOLS_COMPLEMENT;
 
 public class ModFlags {
@@ -12,52 +8,29 @@ public class ModFlags {
 
     }
 
-    private static final FlagManager FLAG_MANAGER = new FlagManager(ID_TOOLS_COMPLEMENT);
+    public static String FLAG_IRON_TOOLS = ID_TOOLS_COMPLEMENT + ":iron_tools";
+    public static String FLAG_GOLD_TOOLS = ID_TOOLS_COMPLEMENT + ":gold_tools";
+    public static String FLAG_DIAMOND_TOOLS = ID_TOOLS_COMPLEMENT + ":diamond_tools";
+    public static String FLAG_NETHERITE_TOOLS = ID_TOOLS_COMPLEMENT + ":netherite_tools";
 
-    public static FlagManager manager() {
+    public static String FLAG_COPPER_TOOLS = ID_TOOLS_COMPLEMENT + ":copper_tools";
+    public static String FLAG_TIN_TOOLS = ID_TOOLS_COMPLEMENT + ":tin_tools";
+    public static String FLAG_LEAD_TOOLS = ID_TOOLS_COMPLEMENT + ":lead_tools";
+    public static String FLAG_SILVER_TOOLS = ID_TOOLS_COMPLEMENT + ":silver_tools";
+    public static String FLAG_NICKEL_TOOLS = ID_TOOLS_COMPLEMENT + ":nickel_tools";
+    public static String FLAG_BRONZE_TOOLS = ID_TOOLS_COMPLEMENT + ":bronze_tools";
+    public static String FLAG_ELECTRUM_TOOLS = ID_TOOLS_COMPLEMENT + ":electrum_tools";
+    public static String FLAG_INVAR_TOOLS = ID_TOOLS_COMPLEMENT + ":invar_tools";
+    public static String FLAG_CONSTANTAN_TOOLS = ID_TOOLS_COMPLEMENT + ":constantan_tools";
 
-        return FLAG_MANAGER;
-    }
+    public static String FLAG_COPPER_ARMOR = ID_TOOLS_COMPLEMENT + ":copper_armor";
+    public static String FLAG_TIN_ARMOR = ID_TOOLS_COMPLEMENT + ":tin_armor";
+    public static String FLAG_LEAD_ARMOR = ID_TOOLS_COMPLEMENT + ":lead_armor";
+    public static String FLAG_SILVER_ARMOR = ID_TOOLS_COMPLEMENT + ":silver_armor";
+    public static String FLAG_NICKEL_ARMOR = ID_TOOLS_COMPLEMENT + ":nickel_armor";
+    public static String FLAG_BRONZE_ARMOR = ID_TOOLS_COMPLEMENT + ":bronze_armor";
+    public static String FLAG_ELECTRUM_ARMOR = ID_TOOLS_COMPLEMENT + ":electrum_armor";
+    public static String FLAG_INVAR_ARMOR = ID_TOOLS_COMPLEMENT + ":invar_armor";
+    public static String FLAG_CONSTANTAN_ARMOR = ID_TOOLS_COMPLEMENT + ":constantan_armor";
 
-    public static void setFlag(String flag, boolean enable) {
-
-        FLAG_MANAGER.setFlag(flag, enable);
-    }
-
-    public static void setFlag(String flag, Supplier<Boolean> condition) {
-
-        FLAG_MANAGER.setFlag(flag, condition);
-    }
-
-    public static Supplier<Boolean> getFlag(String flag) {
-
-        return FLAG_MANAGER.getFlag(flag);
-    }
-
-    // region SPECIFIC FEATURES
-    public static String FLAG_IRON_TOOLS = "iron_tools";
-    public static String FLAG_GOLD_TOOLS = "gold_tools";
-    public static String FLAG_DIAMOND_TOOLS = "diamond_tools";
-    public static String FLAG_NETHERITE_TOOLS = "netherite_tools";
-
-    public static String FLAG_COPPER_TOOLS = "copper_tools";
-    public static String FLAG_TIN_TOOLS = "tin_tools";
-    public static String FLAG_LEAD_TOOLS = "lead_tools";
-    public static String FLAG_SILVER_TOOLS = "silver_tools";
-    public static String FLAG_NICKEL_TOOLS = "nickel_tools";
-    public static String FLAG_BRONZE_TOOLS = "bronze_tools";
-    public static String FLAG_ELECTRUM_TOOLS = "electrum_tools";
-    public static String FLAG_INVAR_TOOLS = "invar_tools";
-    public static String FLAG_CONSTANTAN_TOOLS = "constantan_tools";
-
-    public static String FLAG_COPPER_ARMOR = "copper_armor";
-    public static String FLAG_TIN_ARMOR = "tin_armor";
-    public static String FLAG_LEAD_ARMOR = "lead_armor";
-    public static String FLAG_SILVER_ARMOR = "silver_armor";
-    public static String FLAG_NICKEL_ARMOR = "nickel_armor";
-    public static String FLAG_BRONZE_ARMOR = "bronze_armor";
-    public static String FLAG_ELECTRUM_ARMOR = "electrum_armor";
-    public static String FLAG_INVAR_ARMOR = "invar_armor";
-    public static String FLAG_CONSTANTAN_ARMOR = "constantan_armor";
-    // endregion
 }

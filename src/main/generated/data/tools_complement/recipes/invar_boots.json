@@ -1,12 +1,16 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "conditions": [
+  "neoforge:conditions": [
+    {
+      "type": "cofh_core:flag_set",
+      "flag": "tools_complement:invar_armor"
+    },
     {
       "type": "cofh_core:tag_exists",
       "tag": "forge:ingots/invar"
     }
   ],
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
   "key": {
     "X": {
       "tag": "forge:ingots/invar"
@@ -18,6 +22,5 @@
   ],
   "result": {
     "item": "tools_complement:invar_boots"
-  },
-  "show_notification": true
+  }
 }
