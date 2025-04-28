@@ -1,0 +1,13 @@
+{
+  "values": [
+    "tools_complement:copper_helmet",
+    "tools_complement:tin_helmet",
+    "tools_complement:lead_helmet",
+    "tools_complement:silver_helmet",
+    "tools_complement:nickel_helmet",
+    "tools_complement:bronze_helmet",
+    "tools_complement:electrum_helmet",
+    "tools_complement:invar_helmet",
+    "tools_complement:constantan_helmet"
+  ]
+}

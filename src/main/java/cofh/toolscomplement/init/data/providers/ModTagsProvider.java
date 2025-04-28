@@ -5,6 +5,8 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.data.tags.TagsProvider;
+import net.minecraft.tags.ItemTags;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
@@ -23,7 +25,7 @@ public class ModTagsProvider {
             super(output, lookupProvider, ID_TOOLS_COMPLEMENT, existingFileHelper);
         }
 
-        @SuppressWarnings ("unchecked")
+        @SuppressWarnings("unchecked")
         @Override
         protected void addTags(HolderLookup.Provider pProvider) {
 
@@ -38,7 +40,7 @@ public class ModTagsProvider {
             super(pOutput, pLookupProvider, pBlockTags, ID_TOOLS_COMPLEMENT, existingFileHelper);
         }
 
-        @SuppressWarnings ("unchecked")
+        @SuppressWarnings("unchecked")
         @Override
         protected void addTags(HolderLookup.Provider pProvider) {
 
@@ -221,6 +223,152 @@ public class ModTagsProvider {
                     ITEMS.get("constantan_sickle"),
                     ITEMS.get("constantan_knife")
             );
+
+            tag(ItemTags.AXES).add(
+                    ITEMS.get("copper_axe"),
+                    ITEMS.get("tin_axe"),
+                    ITEMS.get("lead_axe"),
+                    ITEMS.get("silver_axe"),
+                    ITEMS.get("nickel_axe"),
+                    ITEMS.get("bronze_axe"),
+                    ITEMS.get("electrum_axe"),
+                    ITEMS.get("invar_axe"),
+                    ITEMS.get("constantan_axe")
+            );
+            tag(ItemTags.HOES).add(
+                    ITEMS.get("copper_hoe"),
+                    ITEMS.get("tin_hoe"),
+                    ITEMS.get("lead_hoe"),
+                    ITEMS.get("silver_hoe"),
+                    ITEMS.get("nickel_hoe"),
+                    ITEMS.get("bronze_hoe"),
+                    ITEMS.get("electrum_hoe"),
+                    ITEMS.get("invar_hoe"),
+                    ITEMS.get("constantan_hoe")
+            );
+            tag(ItemTags.PICKAXES).add(
+                    ITEMS.get("copper_pickaxe"),
+                    ITEMS.get("tin_pickaxe"),
+                    ITEMS.get("lead_pickaxe"),
+                    ITEMS.get("silver_pickaxe"),
+                    ITEMS.get("nickel_pickaxe"),
+                    ITEMS.get("bronze_pickaxe"),
+                    ITEMS.get("electrum_pickaxe"),
+                    ITEMS.get("invar_pickaxe"),
+                    ITEMS.get("constantan_pickaxe")
+            );
+            tag(ItemTags.SHOVELS).add(
+                    ITEMS.get("copper_shovel"),
+                    ITEMS.get("tin_shovel"),
+                    ITEMS.get("lead_shovel"),
+                    ITEMS.get("silver_shovel"),
+                    ITEMS.get("nickel_shovel"),
+                    ITEMS.get("bronze_shovel"),
+                    ITEMS.get("electrum_shovel"),
+                    ITEMS.get("invar_shovel"),
+                    ITEMS.get("constantan_shovel")
+            );
+            tag(ItemTags.SWORDS).add(
+                    ITEMS.get("copper_sword"),
+                    ITEMS.get("tin_sword"),
+                    ITEMS.get("lead_sword"),
+                    ITEMS.get("silver_sword"),
+                    ITEMS.get("nickel_sword"),
+                    ITEMS.get("bronze_sword"),
+                    ITEMS.get("electrum_sword"),
+                    ITEMS.get("invar_sword"),
+                    ITEMS.get("constantan_sword")
+            );
+
+            tag(Tags.Items.ARMORS_HELMETS).add(
+                    ITEMS.get("copper_helmet"),
+                    ITEMS.get("tin_helmet"),
+                    ITEMS.get("lead_helmet"),
+                    ITEMS.get("silver_helmet"),
+                    ITEMS.get("nickel_helmet"),
+                    ITEMS.get("bronze_helmet"),
+                    ITEMS.get("electrum_helmet"),
+                    ITEMS.get("invar_helmet"),
+                    ITEMS.get("constantan_helmet")
+            );
+            tag(Tags.Items.ARMORS_CHESTPLATES).add(
+                    ITEMS.get("copper_chestplate"),
+                    ITEMS.get("tin_chestplate"),
+                    ITEMS.get("lead_chestplate"),
+                    ITEMS.get("silver_chestplate"),
+                    ITEMS.get("nickel_chestplate"),
+                    ITEMS.get("bronze_chestplate"),
+                    ITEMS.get("electrum_chestplate"),
+                    ITEMS.get("invar_chestplate"),
+                    ITEMS.get("constantan_chestplate")
+            );
+            tag(Tags.Items.ARMORS_LEGGINGS).add(
+                    ITEMS.get("copper_leggings"),
+                    ITEMS.get("tin_leggings"),
+                    ITEMS.get("lead_leggings"),
+                    ITEMS.get("silver_leggings"),
+                    ITEMS.get("nickel_leggings"),
+                    ITEMS.get("bronze_leggings"),
+                    ITEMS.get("electrum_leggings"),
+                    ITEMS.get("invar_leggings"),
+                    ITEMS.get("constantan_leggings")
+            );
+            tag(Tags.Items.ARMORS_BOOTS).add(
+                    ITEMS.get("copper_boots"),
+                    ITEMS.get("tin_boots"),
+                    ITEMS.get("lead_boots"),
+                    ITEMS.get("silver_boots"),
+                    ITEMS.get("nickel_boots"),
+                    ITEMS.get("bronze_boots"),
+                    ITEMS.get("electrum_boots"),
+                    ITEMS.get("invar_boots"),
+                    ITEMS.get("constantan_boots")
+            );
+
+//            tag(ItemTagsCoFH.EXCAVATORS).add(
+//                    ITEMS.get("copper_sword"),
+//                    ITEMS.get("tin_sword"),
+//                    ITEMS.get("lead_sword"),
+//                    ITEMS.get("silver_sword"),
+//                    ITEMS.get("nickel_sword"),
+//                    ITEMS.get("bronze_sword"),
+//                    ITEMS.get("electrum_sword"),
+//                    ITEMS.get("invar_sword"),
+//                    ITEMS.get("constantan_sword")
+//            );
+//            tag(ItemTagsCoFH.HAMMERS).add(
+//                    ITEMS.get("copper_sword"),
+//                    ITEMS.get("tin_sword"),
+//                    ITEMS.get("lead_sword"),
+//                    ITEMS.get("silver_sword"),
+//                    ITEMS.get("nickel_sword"),
+//                    ITEMS.get("bronze_sword"),
+//                    ITEMS.get("electrum_sword"),
+//                    ITEMS.get("invar_sword"),
+//                    ITEMS.get("constantan_sword")
+//            );
+//            tag(ItemTagsCoFH.SICKLES).add(
+//                    ITEMS.get("copper_sword"),
+//                    ITEMS.get("tin_sword"),
+//                    ITEMS.get("lead_sword"),
+//                    ITEMS.get("silver_sword"),
+//                    ITEMS.get("nickel_sword"),
+//                    ITEMS.get("bronze_sword"),
+//                    ITEMS.get("electrum_sword"),
+//                    ITEMS.get("invar_sword"),
+//                    ITEMS.get("constantan_sword")
+//            );
+//            tag(ItemTagsCoFH.KNIVES).add(
+//                    ITEMS.get("copper_sword"),
+//                    ITEMS.get("tin_sword"),
+//                    ITEMS.get("lead_sword"),
+//                    ITEMS.get("silver_sword"),
+//                    ITEMS.get("nickel_sword"),
+//                    ITEMS.get("bronze_sword"),
+//                    ITEMS.get("electrum_sword"),
+//                    ITEMS.get("invar_sword"),
+//                    ITEMS.get("constantan_sword")
+//            );
         }
 
     }

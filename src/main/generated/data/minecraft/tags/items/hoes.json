@@ -1,0 +1,13 @@
+{
+  "values": [
+    "tools_complement:copper_hoe",
+    "tools_complement:tin_hoe",
+    "tools_complement:lead_hoe",
+    "tools_complement:silver_hoe",
+    "tools_complement:nickel_hoe",
+    "tools_complement:bronze_hoe",
+    "tools_complement:electrum_hoe",
+    "tools_complement:invar_hoe",
+    "tools_complement:constantan_hoe"
+  ]
+}

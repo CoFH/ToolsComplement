@@ -1,0 +1,13 @@
+{
+  "values": [
+    "tools_complement:copper_shovel",
+    "tools_complement:tin_shovel",
+    "tools_complement:lead_shovel",
+    "tools_complement:silver_shovel",
+    "tools_complement:nickel_shovel",
+    "tools_complement:bronze_shovel",
+    "tools_complement:electrum_shovel",
+    "tools_complement:invar_shovel",
+    "tools_complement:constantan_shovel"
+  ]
+}

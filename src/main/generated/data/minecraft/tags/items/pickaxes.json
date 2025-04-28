@@ -1,0 +1,13 @@
+{
+  "values": [
+    "tools_complement:copper_pickaxe",
+    "tools_complement:tin_pickaxe",
+    "tools_complement:lead_pickaxe",
+    "tools_complement:silver_pickaxe",
+    "tools_complement:nickel_pickaxe",
+    "tools_complement:bronze_pickaxe",
+    "tools_complement:electrum_pickaxe",
+    "tools_complement:invar_pickaxe",
+    "tools_complement:constantan_pickaxe"
+  ]
+}

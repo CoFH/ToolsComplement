@@ -1,0 +1,13 @@
+{
+  "values": [
+    "tools_complement:copper_chestplate",
+    "tools_complement:tin_chestplate",
+    "tools_complement:lead_chestplate",
+    "tools_complement:silver_chestplate",
+    "tools_complement:nickel_chestplate",
+    "tools_complement:bronze_chestplate",
+    "tools_complement:electrum_chestplate",
+    "tools_complement:invar_chestplate",
+    "tools_complement:constantan_chestplate"
+  ]
+}
